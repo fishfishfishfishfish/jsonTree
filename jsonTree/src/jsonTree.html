@@ -1,0 +1,85 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+  
+<head>  
+    <meta charset="utf-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>testJSON</title>  
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script> 
+    <link rel="stylesheet" href="../css/jquery-ui.css">  
+    <script src="../js/jquery-ui.js"></script>  
+    <style>  
+    li {  
+        list-style-image: url("../images/p.png");  
+    }  
+  
+    li:hover {  
+        cursor: pointer;  
+    }  
+  
+    .hide {  
+        display: none;  
+    }  
+  
+    #jsonArea {  
+        width: 350px;  
+    }  
+    </style>  
+</head>  
+  
+<body>  
+    <div id="jsonArea">  
+    </div>  
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>  
+    <script>  
+    var menulist = "";  
+    $.ajax({  
+        url: "jsonFile.json",  
+        data: {},  
+        type: "POST",  
+        dataType: "JSON",  
+        success: function(result) {  
+            menulist = result;
+            console.log(menulist)
+        }  
+    });  
+  
+    $(function() {  
+        console.log(menulist)
+        var showlist = $("<ul></ul>");  
+        showall(menulist.menulist, showlist);  
+        $("#jsonArea").append(showlist);  
+        $("#jsonArea ul li").find("li").addClass("hide");  
+        $("li").click(function() {  
+            if(!$(this).children("ul").length){  
+                $(this).css("list-style-image", "url('../images/m.png')");  
+            }else if ($(this).children("ul").children("li").hasClass("hide")) {  
+                $(this).children("ul").children("li").removeClass("hide");  
+                $(this).css("list-style-image", "url('../images/m.png')");  
+                return false;  
+            } else {  
+                $(this).find("li").addClass("hide");$(this).find("li").css("list-style-image", "url('../images/p.png')");  
+                $(this).css("list-style-image", "url('../images/p.png')");  
+                return false;  
+            }  
+            return false;  
+        });  
+    });  
+  
+    function showall(menu_list, parent) {　　   
+        for (var menu in menu_list) {  
+            if (menu_list[menu].menulist.length > 0) {  
+                var li = $("<li></li>");  
+                $(li).append(menu_list[menu].MName).append("<ul></ul>").appendTo(parent);  
+                showall(menu_list[menu].menulist, $(li).children().eq(0));  
+            }  
+            else {  
+                $("<li></li>").append(menu_list[menu].MName).appendTo(parent);  
+            }  
+        }  
+    }  
+    </script>  
+</body>  
+  
+</html>  

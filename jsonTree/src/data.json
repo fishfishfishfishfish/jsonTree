@@ -1,0 +1,131 @@
+{  
+    "menulist": [  
+    {  
+        "MName": "重点区域",  
+        "menulist": [  
+        {  
+            "MName": "南京城市管理",  
+            "menulist": [  
+            {  
+                "MName": "区县单位",  
+                "menulist": ""  
+            },  
+            {  
+                "MName": "执行总队",  
+                "menulist": [  
+                {  
+                    "MName": "玄武区大队",  
+                    "menulist": [  
+                    {  
+                        "MName": "中队1",  
+                        "menulist": ""  
+                    },  
+                    {  
+                        "MName": "中队2",  
+                        "menulist": ""  
+                    },  
+                    {  
+                        "MName": "中队3",  
+                        "menulist": ""  
+                    }]  
+                },  
+                {  
+                    "MName": "秦淮区大队",  
+                    "menulist": [  
+                    {  
+                        "MName": "中队1",  
+                        "menulist": ""  
+                    },  
+                    {  
+                        "MName": "中队2",  
+                        "menulist": ""  
+                    },  
+                    {  
+                        "MName": "中队3",  
+                        "menulist": ""  
+                    }]  
+                },  
+                {  
+                    "MName": "建邺区大队",  
+                    "menulist": [  
+                    {  
+                        "MName": "中队1",  
+                        "menulist": ""  
+                    },  
+                    {  
+                        "MName": "中队2",  
+                        "menulist": ""  
+                    },  
+                    {  
+                        "MName": "中队3",  
+                        "menulist": ""  
+                    }]  
+                }]  
+            }]  
+        }]  
+    },  
+    {  
+        "MName": "核心岗位",  
+        "menulist": [  
+        {  
+            "MName": "南京城市管理",  
+            "menulist": [  
+            {  
+                "MName": "区县单位",  
+                "menulist": ""  
+            },  
+            {  
+                "MName": "执行总队",  
+                "menulist": [  
+                {  
+                    "MName": "玄武区大队",  
+                    "menulist": [  
+                    {  
+                        "MName": "中队1",  
+                        "menulist": ""  
+                    },  
+                    {  
+                        "MName": "中队2",  
+                        "menulist": ""  
+                    },  
+                    {  
+                        "MName": "中队3",  
+                        "menulist": ""  
+                    }]  
+                },  
+                {  
+                    "MName": "秦淮区大队",  
+                    "menulist": [  
+                    {  
+                        "MName": "中队1",  
+                        "menulist": ""  
+                    },  
+                    {  
+                        "MName": "中队2",  
+                        "menulist": ""  
+                    },  
+                    {  
+                        "MName": "中队3",  
+                        "menulist": ""  
+                    }]  
+                },  
+                {  
+                    "MName": "建邺区大队",  
+                    "menulist": [  
+                    {  
+                        "MName": "中队1",  
+                        "menulist": ""  
+                    },  
+                    {  
+                        "MName": "中队2",  
+                        "menulist": ""  
+                    },  
+                    {  
+                        "MName": "中队3",  
+                        "menulist": ""  
+                    }]  
+                }]  
+            }]  
+        }]  
+    }]  
+}  

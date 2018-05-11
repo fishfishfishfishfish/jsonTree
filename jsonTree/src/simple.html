@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+    body{
+        font-size:14px;
+        margin:0;}
+    div{
+        width:auto;
+        height:auto;
+        line-height:150%;}
+    ul{
+        list-style:none;
+        margin-left:-20px;}
+    ul li:hover{
+        background-color:#DDDDDD;
+        color:#FF0000;
+        cursor:pointer;}
+</style>
+</head>
+ 
+<body>
+    <div id="continer"></div>
+</body>
+</html>
+<script language="javascript" src="jquery-1.4.1.min.js"></script>
+<script language="javascript">
+    //模拟数据
+    var jsonData = [
+        {"id":"1","name":"父节点1","url":"www.baidu.com","pid":"0"},
+            {"id":"4","name":"父节点11","url":"","pid":"1"},
+                {"id":"13","name":"父节点111","url":"","pid":"4"},
+                {"id":"14","name":"父节点112","url":"","pid":"4"},
+            {"id":"5","name":"父节点12","url":"","pid":"1"},
+            {"id":"6","name":"父节点13","url":"","pid":"1"},
+        {"id":"2","name":"父节点4","url":"","pid":"0"},
+            {"id":"7","name":"父节点41","url":"","pid":"2"},
+            {"id":"8","name":"父节点42","url":"","pid":"2"},
+            {"id":"9","name":"父节点43","url":"","pid":"2"},
+        {"id":"3","name":"父节点5","url":"","pid":"0"},
+            {"id":"10","name":"父节点51","url":"","pid":"3"},
+            {"id":"11","name":"父节点52","url":"","pid":"3"},
+            {"id":"12","name":"父节点53","url":"","pid":"3"}
+    ] ;
+    
+    
+    //主方法，运用递归实现
+    function createTree(jsons,pid){
+        if(jsons != null){
+            var ul = '<ul class="">' ;
+            for(var i=0;i<jsons.length;i++){
+                if(jsons[i].pid == pid){
+                    ul += '<li>' + jsons[i].name + "</li>" ;
+                    ul += createTree(jsons,jsons[i].id) ;
+                }
+            }
+            ul += "</ul>" ;
+        }
+        return ul ;
+    }
+    
+    $(function(){
+        var ul = createTree(jsonData,0) ;
+        
+        $("#continer").append(ul) ;
+        
+        //控制菜单的隐藏显示
+        $("ul[class] li").each(function(){
+            $(this).click(function(){
+                $(this).next().toggle() ;
+            }) ;
+        }) ;
+
+    }) ;
+    
+</script>

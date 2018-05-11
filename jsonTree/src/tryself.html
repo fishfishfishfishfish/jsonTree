@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+    body{
+        font-size:14px;
+        margin:0;}
+    div{
+        width:auto;
+        height:auto;
+        line-height:150%;}
+    ul{
+        list-style:none;
+        margin-left:-20px;}
+    /* ul li:hover{
+        background-color:#DDDDDD;
+        color:#FF0000;
+        cursor:pointer;} */
+    li:hover{
+        cursor:pointer;
+    }
+    li:hover+ul{
+        background-color:#DDDDDD;
+        cursor:pointer;
+    }
+    li.stem{
+        color: brown;
+    }
+    li.leaf{
+        color: green;
+    }
+</style>
+</head>
+ 
+<body>
+    <div id="continer"></div>
+</body>
+</html>
+<script language="javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script language="javascript">
+    //模拟数据
+    var jsonData = "";
+    $.ajax({  
+        url: "jsonFileChi.json",  
+        data: {},  
+        type: "POST",  
+        dataType: "JSON",  
+        success: function(result) {  
+            jsonData = result;
+            console.log(jsonData)
+            main();
+        }  
+    });  
+    
+    
+    //主方法，运用递归实现
+    function createTree(jsons){
+        if(jsons != null){
+            var ul = '<ul class="">' ;
+            for(var i=0;i<jsons.length;i++){
+                if(typeof(jsons[i].result)=="undefined"){
+                    ul += '<li class="stem">' + jsons[i].name + " " + jsons[i].op + "</li>" ;
+                }
+                else{
+                    ul += '<li class="leaf">' + jsons[i].name + " " + jsons[i].op  + " -- " + jsons[i].result + "</li>" ;
+                }
+                ul += createTree(jsons[i].node) ;
+            }
+            ul += "</ul>" ;
+        }
+        return ul ;
+    }
+    
+    function main(){
+        var ul = createTree(jsonData) ;
+        
+        $("#continer").append(ul) ;
+        
+        //控制菜单的隐藏显示
+        $("ul[class] li").each(function(){
+            $(this).click(function(){
+                $(this).next().toggle("easeOutElastic") ;
+            }) ;
+        }) ;
+    }
+    
+</script>
