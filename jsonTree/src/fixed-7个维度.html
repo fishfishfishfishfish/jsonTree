@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>7个主维度</title>
+    <style type="text/css">
+        body {
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        div {
+            width: auto;
+            height: auto;
+            line-height: 150%;
+        }
+        
+        ul {
+            list-style: none;
+            margin-left: -20px;
+        }
+        /* ul li:hover{
+        background-color:#DDDDDD;
+        color:#FF0000;
+        cursor:pointer;} */
+        
+        li:hover {
+            cursor: pointer;
+        }
+        
+        li:hover+ul {
+            background-color: #DDDDDD;
+            cursor: pointer;
+        }
+        
+        li.stem {
+            color: brown;
+        }
+        
+        li.leaf {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="continer">
+        <ul class="keep">
+            <li class="stem">bio &lt;=0.035587 entropy= 0.9828979053834874, gain ratio= 0.2947421839328547, 新闻的数目= 928, 谣言的数目= 1265, </li>
+            <ul class="keep">
+                <li class="stem">bio &lt;=0 entropy= 0.32470766475941193, gain ratio= 0.0664353709289321, 新闻的数目= 50, 谣言的数目= 793, </li>
+                <ul class="keep">
+                    <li class="stem">percept &lt;=0.043847 entropy= 0.5418160214051355, gain ratio= 0.13216469072851983, 新闻的数目= 50, 谣言的数目= 352, </li>
+                    <ul class="keep">
+                        <li class="leaf">TenseM &lt;=0.007092 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 196, </li>
+                        <ul class="keep"></ul>
+                        <li class="stem">TenseM &gt;0.007092 entropy= 0.7995318105266798, gain ratio= 0.20035889275846427, 新闻的数目= 50, 谣言的数目= 156, </li>
+                        <ul class="keep">
+                            <li class="stem">pronoun &lt;=0.063492 entropy= 0.9592194922062226, gain ratio= 0.19867236784984785, 新闻的数目= 50, 谣言的数目= 81, </li>
+                            <ul class="keep">
+                                <li class="stem">affect &lt;=0.070968 entropy= 1, gain ratio= 0.2824800997826195, 新闻的数目= 49, 谣言的数目= 49, </li>
+                                <ul class="keep">
+                                    <li class="stem">percept &lt;=0.001536 entropy= 0.4488644887230294, gain ratio= 0.15154027581540957, 新闻的数目= 3, 谣言的数目= 29, </li>
+                                    <ul class="keep">
+                                        <li class="stem">TenseM &lt;=0.062069 entropy= 0.8112781244591328, gain ratio= 0.6468214774323336, 新闻的数目= 3, 谣言的数目= 9, </li>
+                                        <ul class="keep">
+                                            <li class="leaf">social &lt;=0.021645 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 2, 谣言的数目= 0, </li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">social &gt;0.021645 -- 0, entropy= 0.4689955935892812, gain ratio= 0, 新闻的数目= 1, 谣言的数目= 9, </li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="leaf">TenseM &gt;0.062069 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 20, </li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                    <li class="stem">percept &gt;0.001536 entropy= 0.884963636383153, gain ratio= 0.35112703011637813, 新闻的数目= 46, 谣言的数目= 20, </li>
+                                    <ul class="keep">
+                                        <li class="leaf">social &lt;=0.052863 -- 1, entropy= 0.37123232664087563, gain ratio= 0, 新闻的数目= 39, 谣言的数目= 3, </li>
+                                        <ul class="keep"></ul>
+                                        <li class="stem">social &gt;0.052863 entropy= 0.8708644692353646, gain ratio= 0.2305700652495857, 新闻的数目= 7, 谣言的数目= 17, </li>
+                                        <ul class="keep" style="display: block;">
+                                            <li class="stem">affect &lt;=0.052375 entropy= 0.9886994082884974, gain ratio= 0.31283703226847903, 新闻的数目= 7, 谣言的数目= 9, </li>
+                                            <ul class="keep">
+                                                <li class="leaf">pronoun &lt;=0.019064 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 4, </li>
+                                                <ul class="keep"></ul>
+                                                <li class="stem">pronoun &gt;0.019064 entropy= 0.9798687566511527, gain ratio= 0.6548575458269756, 新闻的数目= 7, 谣言的数目= 5, </li>
+                                                <ul class="keep">
+                                                    <li class="leaf">affect &lt;=0.030612 -- 0, entropy= 0.6500224216483541, gain ratio= 0, 新闻的数目= 1, 谣言的数目= 5, </li>
+                                                    <ul class="keep"></ul>
+                                                    <li class="leaf">affect &gt;0.030612 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 6, 谣言的数目= 0, </li>
+                                                    <ul class="keep"></ul>
+                                                </ul>
+                                            </ul>
+                                            <li class="leaf">affect &gt;0.052375 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 8, </li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                                <li class="leaf">affect &gt;0.070968 -- 0, entropy= 0.19590927087360493, gain ratio= 0, 新闻的数目= 1, 谣言的数目= 32, </li>
+                                <ul class="keep"></ul>
+                            </ul>
+                            <li class="leaf">pronoun &gt;0.063492 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 75, </li>
+                            <ul class="keep"></ul>
+                        </ul>
+                    </ul>
+                    <li class="leaf">percept &gt;0.043847 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 441, </li>
+                    <ul class="keep"></ul>
+                </ul>
+                <li class="stem">bio &gt;0 entropy= 0.9337368482116498, gain ratio= 0.15584651777103028, 新闻的数目= 878, 谣言的数目= 472, </li>
+                <ul class="keep">
+                    <li class="stem">bio &lt;=0.014167 entropy= 0.583107229679045, gain ratio= 0.09355193622462382, 新闻的数目= 598, 谣言的数目= 97, </li>
+                    <ul class="keep">
+                        <li class="stem">pronoun &lt;=0.040625 entropy= 0.33679856262689833, gain ratio= 0.030962776880189096, 新闻的数目= 466, 谣言的数目= 31, </li>
+                        <ul class="keep">
+                            <li class="stem">affect &lt;=0.050076 entropy= 0.24092527014611437, gain ratio= 0.03892573552008312, 新闻的数目= 387, 谣言的数目= 16, </li>
+                            <ul class="keep">
+                                <li class="leaf">social &lt;=0.047157 -- 1, entropy= 0.13238838316272516, gain ratio= 0, 新闻的数目= 320, 谣言的数目= 6, </li>
+                                <ul class="keep"></ul>
+                                <li class="stem">social &gt;0.047157 entropy= 0.5570819081034161, gain ratio= 0.28099597781477514, 新闻的数目= 67, 谣言的数目= 10, </li>
+                                <ul class="keep">
+                                    <li class="stem">percept &lt;=0.042929 entropy= 0.4558314584408234, gain ratio= 0.35747250256376633, 新闻的数目= 66, 谣言的数目= 7, </li>
+                                    <ul class="keep">
+                                        <li class="leaf">affect &lt;=0.015406 -- 0, entropy= 0.8112781244591328, gain ratio= 0, 新闻的数目= 1, 谣言的数目= 3, </li>
+                                        <ul class="keep"></ul>
+                                        <li class="leaf">affect &gt;0.015406 -- 1, entropy= 0.3193373865339728, gain ratio= 0, 新闻的数目= 65, 谣言的数目= 4, </li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                    <li class="leaf">percept &gt;0.042929 -- 0, entropy= 0.8112781244591328, gain ratio= 0, 新闻的数目= 1, 谣言的数目= 3, </li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                            </ul>
+                            <li class="stem">affect &gt;0.050076 entropy= 0.6332905746550957, gain ratio= 0.11541958661077399, 新闻的数目= 79, 谣言的数目= 15, </li>
+                            <ul class="keep">
+                                <li class="leaf">bio &lt;=0.00489 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 32, 谣言的数目= 0, </li>
+                                <ul class="keep"></ul>
+                                <li class="stem">bio &gt;0.00489 entropy= 0.7982441335646698, gain ratio= 0.11518955806551116, 新闻的数目= 47, 谣言的数目= 15, </li>
+                                <ul class="keep">
+                                    <li class="stem">TenseM &lt;=0.026397 entropy= 1, gain ratio= 0.5, 新闻的数目= 9, 谣言的数目= 9, </li>
+                                    <ul class="keep">
+                                        <li class="stem">percept &lt;=0.0209 entropy= 0.8112781244591328, gain ratio= 0.5889736868180786, 新闻的数目= 9, 谣言的数目= 3, </li>
+                                        <ul class="keep">
+                                            <li class="leaf">affect &lt;=0.062361 -- 0, entropy= 0.8112781244591328, gain ratio= 0, 新闻的数目= 1, 谣言的数目= 3, </li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">affect &gt;0.062361 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 8, 谣言的数目= 0, </li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="leaf">percept &gt;0.0209 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 6, </li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                    <li class="stem">TenseM &gt;0.026397 entropy= 0.5746356978376794, gain ratio= 0.1329138246485477, 新闻的数目= 38, 谣言的数目= 6, </li>
+                                    <ul class="keep">
+                                        <li class="stem">pronoun &lt;=0.028662 entropy= 0.8112781244591328, gain ratio= 0.44522810430465803, 新闻的数目= 18, 谣言的数目= 6, </li>
+                                        <ul class="keep">
+                                            <li class="stem">social &lt;=0.06079 entropy= 0.6840384356390416, gain ratio= 0.41063775967398153, 新闻的数目= 18, 谣言的数目= 4, </li>
+                                            <ul class="keep">
+                                                <li class="leaf">bio &lt;=0.01147 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 15, 谣言的数目= 0, </li>
+                                                <ul class="keep"></ul>
+                                                <li class="stem">bio &gt;0.01147 entropy= 0.9852281360342516, gain ratio= 0.5440320022665034, 新闻的数目= 3, 谣言的数目= 4, </li>
+                                                <ul class="keep">
+                                                    <li class="leaf">cogmech &lt;=0.104387 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 2, 谣言的数目= 0, </li>
+                                                    <ul class="keep"></ul>
+                                                    <li class="leaf">cogmech &gt;0.104387 -- 0, entropy= 0.7219280948873623, gain ratio= 0, 新闻的数目= 1, 谣言的数目= 4, </li>
+                                                    <ul class="keep"></ul>
+                                                </ul>
+                                            </ul>
+                                            <li class="leaf">social &gt;0.06079 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 2, </li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="leaf">pronoun &gt;0.028662 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 20, 谣言的数目= 0, </li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                        <li class="stem">pronoun &gt;0.040625 entropy= 0.9182958340544896, gain ratio= 0.15211722537909053, 新闻的数目= 132, 谣言的数目= 66, </li>
+                        <ul class="keep">
+                            <li class="stem">percept &lt;=0.035862 entropy= 0.8229274844491258, gain ratio= 0.1300389885300707, 新闻的数目= 124, 谣言的数目= 43, </li>
+                            <ul class="keep">
+                                <li class="stem">TenseM &lt;=0.022436 entropy= 0.8904916402194913, gain ratio= 0.5032270699161941, 新闻的数目= 4, 谣言的数目= 9, </li>
+                                <ul class="keep">
+                                    <li class="leaf">affect &lt;=0.034693 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 2, 谣言的数目= 0, </li>
+                                    <ul class="keep"></ul>
+                                    <li class="stem">affect &gt;0.034693 entropy= 0.6840384356390416, gain ratio= 0.33881307108262975, 新闻的数目= 2, 谣言的数目= 9, </li>
+                                    <ul class="keep">
+                                        <li class="leaf">pronoun &lt;=0.059233 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 7, </li>
+                                        <ul class="keep"></ul>
+                                        <li class="stem">pronoun &gt;0.059233 entropy= 1, gain ratio= 1, 新闻的数目= 2, 谣言的数目= 2, </li>
+                                        <ul class="keep">
+                                            <li class="leaf">pronoun &lt;=0.09375 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 2, 谣言的数目= 0, </li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">pronoun &gt;0.09375 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 2, </li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                                <li class="leaf">TenseM &gt;0.022436 -- 1, entropy= 0.761587786957669, gain ratio= 0, 新闻的数目= 120, 谣言的数目= 34, </li>
+                                <ul class="keep"></ul>
+                            </ul>
+                            <li class="stem">percept &gt;0.035862 entropy= 0.8238116333123173, gain ratio= 0.27002531259841383, 新闻的数目= 8, 谣言的数目= 23, </li>
+                            <ul class="keep">
+                                <li class="stem">cogmech &lt;=0.143705 entropy= 0.863120568566631, gain ratio= 1, 新闻的数目= 5, 谣言的数目= 2, </li>
+                                <ul class="keep">
+                                    <li class="leaf">TenseM &lt;=0.028736 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 2, </li>
+                                    <ul class="keep"></ul>
+                                    <li class="leaf">TenseM &gt;0.028736 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 5, 谣言的数目= 0, </li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                                <li class="leaf">cogmech &gt;0.143705 -- 0, entropy= 0.5435644431995964, gain ratio= 0, 新闻的数目= 3, 谣言的数目= 21, </li>
+                                <ul class="keep"></ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li class="stem">bio &gt;0.014167 entropy= 0.984772028847245, gain ratio= 0.09611866454269516, 新闻的数目= 280, 谣言的数目= 375, </li>
+                    <ul class="keep">
+                        <li class="stem">percept &lt;=0.051532 entropy= 0.9979023026797438, gain ratio= 0.06839988134538463, 新闻的数目= 272, 谣言的数目= 303, </li>
+                        <ul class="keep">
+                            <li class="stem">TenseM &lt;=0.033563 entropy= 0.8891077086271675, gain ratio= 0.08396844743082697, 新闻的数目= 80, 谣言的数目= 181, </li>
+                            <ul class="keep">
+                                <li class="stem">percept &lt;=0.014437 entropy= 0.987956501491916, gain ratio= 0.16410598155949466, 新闻的数目= 35, 谣言的数目= 27, </li>
+                                <ul class="keep">
+                                    <li class="leaf">TenseM &lt;=0.015038 -- 0, entropy= 0.6500224216483541, gain ratio= 0, 新闻的数目= 2, 谣言的数目= 10, </li>
+                                    <ul class="keep"></ul>
+                                    <li class="stem">TenseM &gt;0.015038 entropy= 0.92481870497303, gain ratio= 0.12609998239068834, 新闻的数目= 33, 谣言的数目= 17, </li>
+                                    <ul class="keep">
+                                        <li class="stem">pronoun &lt;=0.018919 entropy= 0.4854607607459134, gain ratio= 0.2765538538909833, 新闻的数目= 17, 谣言的数目= 2, </li>
+                                        <ul class="keep">
+                                            <li class="stem">affect &lt;=0.030869 entropy= 0.9709505944546686, gain ratio= 1, 新闻的数目= 3, 谣言的数目= 2, </li>
+                                            <ul class="keep">
+                                                <li class="leaf">percept &lt;=0.011673 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 3, 谣言的数目= 0, </li>
+                                                <ul class="keep"></ul>
+                                                <li class="leaf">percept &gt;0.011673 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 2, </li>
+                                                <ul class="keep"></ul>
+                                            </ul>
+                                            <li class="leaf">affect &gt;0.030869 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 14, 谣言的数目= 0, </li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="stem">pronoun &gt;0.018919 entropy= 0.9992492479956565, gain ratio= 0.20943545534966207, 新闻的数目= 16, 谣言的数目= 15, </li>
+                                        <ul class="keep">
+                                            <li class="leaf">cogmech &lt;=0.141491 -- 1, entropy= 0.5032583347756457, gain ratio= 0, 新闻的数目= 8, 谣言的数目= 1, </li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">cogmech &gt;0.141491 -- 0, entropy= 0.9456603046006402, gain ratio= 0, 新闻的数目= 8, 谣言的数目= 14, </li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                                <li class="stem">percept &gt;0.014437 entropy= 0.7712049391273162, gain ratio= 0.07883753159757503, 新闻的数目= 45, 谣言的数目= 154, </li>
+                                <ul class="keep">
+                                    <li class="stem">pronoun &lt;=0.016226 entropy= 0.99819587904281, gain ratio= 0.2704562508181179, 新闻的数目= 19, 谣言的数目= 21, </li>
+                                    <ul class="keep">
+                                        <li class="leaf">affect &lt;=0.019724 -- 1, entropy= 0.4394969869215134, gain ratio= 0, 新闻的数目= 10, 谣言的数目= 1, </li>
+                                        <ul class="keep"></ul>
+                                        <li class="stem">affect &gt;0.019724 entropy= 0.8935711016541907, gain ratio= 0.35079459427608023, 新闻的数目= 9, 谣言的数目= 20, </li>
+                                        <ul class="keep">
+                                            <li class="leaf">TenseM &lt;=0.022544 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 13, </li>
+                                            <ul class="keep"></ul>
+                                            <li class="stem">TenseM &gt;0.022544 entropy= 0.9886994082884974, gain ratio= 0.3778387311866184, 新闻的数目= 9, 谣言的数目= 7, </li>
+                                            <ul class="keep">
+                                                <li class="stem">social &lt;=0.016014 entropy= 0.9456603046006402, gain ratio= 0.44744280677625725, 新闻的数目= 4, 谣言的数目= 7, </li>
+                                                <ul class="keep">
+                                                    <li class="stem">pronoun &lt;=0.012658 entropy= 0.9182958340544896, gain ratio= 1, 新闻的数目= 4, 谣言的数目= 2, </li>
+                                                    <ul class="keep">
+                                                        <li class="leaf">social &lt;=0.003676 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 2, </li>
+                                                        <ul class="keep"></ul>
+                                                        <li class="leaf">social &gt;0.003676 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 4, 谣言的数目= 0, </li>
+                                                        <ul class="keep"></ul>
+                                                    </ul>
+                                                    <li class="leaf">pronoun &gt;0.012658 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 5, </li>
+                                                    <ul class="keep"></ul>
+                                                </ul>
+                                                <li class="leaf">social &gt;0.016014 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 5, 谣言的数目= 0, </li>
+                                                <ul class="keep"></ul>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                    <li class="leaf">pronoun &gt;0.016226 -- 0, entropy= 0.6426691402319867, gain ratio= 0, 新闻的数目= 26, 谣言的数目= 133, </li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                            </ul>
+                            <li class="stem">TenseM &gt;0.033563 entropy= 0.9638476427733655, gain ratio= 0.06842783442582775, 新闻的数目= 192, 谣言的数目= 122, </li>
+                            <ul class="keep">
+                                <li class="stem">cogmech &lt;=0.147208 entropy= 0.710676853856123, gain ratio= 0.22553090743599186, 新闻的数目= 87, 谣言的数目= 21, </li>
+                                <ul class="keep">
+                                    <li class="leaf">affect &lt;=0.063232 -- 1, entropy= 0.6098403047164004, gain ratio= 0, 新闻的数目= 85, 谣言的数目= 15, </li>
+                                    <ul class="keep"></ul>
+                                    <li class="stem">affect &gt;0.063232 entropy= 0.8112781244591328, gain ratio= 0.31127812445913283, 新闻的数目= 2, 谣言的数目= 6, </li>
+                                    <ul class="keep">
+                                        <li class="stem">social &lt;=0.064516 entropy= 1, gain ratio= 1, 新闻的数目= 2, 谣言的数目= 2, </li>
+                                        <ul class="keep">
+                                            <li class="leaf">affect &lt;=0.076547 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 2, </li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">affect &gt;0.076547 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 2, 谣言的数目= 0, </li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="leaf">social &gt;0.064516 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 4, </li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                </ul>
+                                <li class="stem">cogmech &gt;0.147208 entropy= 0.9997280072178101, gain ratio= 0.08223748126002503, 新闻的数目= 105, 谣言的数目= 101, </li>
+                                <ul class="keep">
+                                    <li class="stem">bio &lt;=0.028195 entropy= 0.9601186626422924, gain ratio= 0.12680399595855063, 新闻的数目= 87, 谣言的数目= 54, </li>
+                                    <ul class="keep">
+                                        <li class="stem">percept &lt;=0.020554 entropy= 0.9709505944546686, gain ratio= 0.181098112828475, 新闻的数目= 26, 谣言的数目= 39, </li>
+                                        <ul class="keep">
+                                            <li class="leaf">cogmech &lt;=0.17278 -- 1, entropy= 0.8453509366224365, gain ratio= 0, 新闻的数目= 16, 谣言的数目= 6, </li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">cogmech &gt;0.17278 -- 0, entropy= 0.782444129406689, gain ratio= 0, 新闻的数目= 10, 谣言的数目= 33, </li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="stem">percept &gt;0.020554 entropy= 0.7166336117927454, gain ratio= 0.4449012880188612, 新闻的数目= 61, 谣言的数目= 15, </li>
+                                        <ul class="keep">
+                                            <li class="leaf">affect &lt;=0.075758 -- 1, entropy= 0.616748259826391, gain ratio= 0, 新闻的数目= 61, 谣言的数目= 11, </li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">affect &gt;0.075758 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 4, </li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                    </ul>
+                                    <li class="leaf">bio &gt;0.028195 -- 0, entropy= 0.8512243352621378, gain ratio= 0, 新闻的数目= 18, 谣言的数目= 47, </li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                        <li class="leaf">percept &gt;0.051532 -- 0, entropy= 0.4689955935892812, gain ratio= 0, 新闻的数目= 8, 谣言的数目= 72, </li>
+                        <ul class="keep"></ul>
+                    </ul>
+                </ul>
+            </ul>
+            <li class="stem">bio &gt;0.035587 entropy= 0.2510098036334462, gain ratio= 0.015098843145664181, 新闻的数目= 126, 谣言的数目= 2880, </li>
+            <ul class="keep">
+                <li class="stem">bio &lt;=0.063421 entropy= 0.43201463530596756, gain ratio= 0.02899984207582645, 新闻的数目= 72, 谣言的数目= 740, </li>
+                <ul class="keep">
+                    <li class="stem">pronoun &lt;=0.021589 entropy= 0.7247964757272867, gain ratio= 0.12282163232435456, 新闻的数目= 28, 谣言的数目= 111, </li>
+                    <ul class="keep">
+                        <li class="stem">percept &lt;=0.015089 entropy= 0.9910760598382222, gain ratio= 0.3573446391960893, 新闻的数目= 10, 谣言的数目= 8, </li>
+                        <ul class="keep">
+                            <li class="leaf">cogmech &lt;=0.152249 -- 1, entropy= 0.5032583347756457, gain ratio= 0, 新闻的数目= 8, 谣言的数目= 1, </li>
+                            <ul class="keep"></ul>
+                            <li class="stem">cogmech &gt;0.152249 entropy= 0.7642045065086203, gain ratio= 0.49886526560234923, 新闻的数目= 2, 谣言的数目= 7, </li>
+                            <ul class="keep">
+                                <li class="leaf">percept &lt;=0.010899 -- 0, entropy= 0, gain ratio= 0, 新闻的数目= 0, 谣言的数目= 6, </li>
+                                <ul class="keep"></ul>
+                                <li class="leaf">percept &gt;0.010899 -- 1, entropy= 0.9182958340544896, gain ratio= 0, 新闻的数目= 2, 谣言的数目= 1, </li>
+                                <ul class="keep"></ul>
+                            </ul>
+                        </ul>
+                        <li class="stem">percept &gt;0.015089 entropy= 0.6067293172263868, gain ratio= 0.07406870686997055, 新闻的数目= 18, 谣言的数目= 103, </li>
+                        <ul class="keep">
+                            <li class="leaf">TenseM &lt;=0.028145 -- 0, entropy= 0.26982844770307396, gain ratio= 0, 新闻的数目= 3, 谣言的数目= 62, </li>
+                            <ul class="keep"></ul>
+                            <li class="stem">TenseM &gt;0.028145 entropy= 0.8383729377099397, gain ratio= 0.39633436354525203, 新闻的数目= 15, 谣言的数目= 41, </li>
+                            <ul class="keep">
+                                <li class="stem">pronoun &lt;=0.020817 entropy= 0.7444131797881748, gain ratio= 0.43804010085266864, 新闻的数目= 11, 谣言的数目= 41, </li>
+                                <ul class="keep">
+                                    <li class="leaf">TenseM &lt;=0.029412 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 3, 谣言的数目= 0, </li>
+                                    <ul class="keep"></ul>
+                                    <li class="leaf">TenseM &gt;0.029412 -- 0, entropy= 0.6420642892306891, gain ratio= 0, 新闻的数目= 8, 谣言的数目= 41, </li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                                <li class="leaf">pronoun &gt;0.020817 -- 1, entropy= 0, gain ratio= 0, 新闻的数目= 4, 谣言的数目= 0, </li>
+                                <ul class="keep"></ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li class="leaf">pronoun &gt;0.021589 -- 0, entropy= 0.3484370105878595, gain ratio= 0, 新闻的数目= 44, 谣言的数目= 629, </li>
+                    <ul class="keep"></ul>
+                </ul>
+                <li class="leaf">bio &gt;0.063421 -- 0, entropy= 0.16660879532833556, gain ratio= 0, 新闻的数目= 54, 谣言的数目= 2140, </li>
+                <ul class="keep"></ul>
+            </ul>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script language="javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script language="javascript">
+    //模拟数据
+
+    $(function() {
+        //控制菜单的隐藏显示
+        $("ul[class] li").each(function() {
+            $(this).click(function() {
+                $(this).next().toggle("easeOutElastic");
+            });
+        });
+    })
+</script>

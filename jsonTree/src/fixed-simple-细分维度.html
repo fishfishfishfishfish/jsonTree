@@ -1,0 +1,646 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>细分维度</title>
+    <style type="text/css">
+        body {
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        div {
+            width: auto;
+            height: auto;
+            line-height: 150%;
+        }
+        
+        ul {
+            list-style: none;
+            margin-left: -20px;
+        }
+        /* ul li:hover{
+        background-color:#DDDDDD;
+        color:#FF0000;
+        cursor:pointer;} */
+        
+        li:hover {
+            cursor: pointer;
+        }
+        
+        li:hover+ul {
+            background-color: #DDDDDD;
+            cursor: pointer;
+        }
+        
+        li.stem {
+            color: brown;
+        }
+        
+        li.leaf {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="continer">
+        <ul class="keep">
+            <li class="stem">health &lt;=0.014815 </li>
+            <ul class="keep">
+                <li class="stem">PresentM &lt;=0 </li>
+                <ul class="keep">
+                    <li class="stem">PastM &lt;=0.002404 </li>
+                    <ul class="keep">
+                        <li class="stem">shehe &lt;=0.002078 </li>
+                        <ul class="keep">
+                            <li class="leaf">ProgM &lt;=0.001546 -- 0</li>
+                            <ul class="keep"></ul>
+                            <li class="stem">ProgM &gt;0.001546 </li>
+                            <ul class="keep">
+                                <li class="stem">insight &lt;=0.024096 </li>
+                                <ul class="keep">
+                                    <li class="stem">posemo &lt;=0.016142 </li>
+                                    <ul class="keep">
+                                        <li class="leaf">see &lt;=0.006861 -- 1</li>
+                                        <ul class="keep"></ul>
+                                        <li class="leaf">see &gt;0.006861 -- 0</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                    <li class="leaf">posemo &gt;0.016142 -- 0</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                                <li class="leaf">insight &gt;0.024096 -- 0</li>
+                                <ul class="keep"></ul>
+                            </ul>
+                        </ul>
+                        <li class="stem">shehe &gt;0.002078 </li>
+                        <ul class="keep">
+                            <li class="leaf">ProgM &lt;=0.02346 -- 0</li>
+                            <ul class="keep"></ul>
+                            <li class="stem">ProgM &gt;0.02346 </li>
+                            <ul class="keep">
+                                <li class="leaf">insight &lt;=0.069767 -- 1</li>
+                                <ul class="keep"></ul>
+                                <li class="leaf">insight &gt;0.069767 -- 0</li>
+                                <ul class="keep"></ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li class="stem">PastM &gt;0.002404 </li>
+                    <ul class="keep">
+                        <li class="leaf">hear &lt;=0.001901 -- 0</li>
+                        <ul class="keep"></ul>
+                        <li class="stem">hear &gt;0.001901 </li>
+                        <ul class="keep">
+                            <li class="leaf">body &lt;=0.00508 -- 0</li>
+                            <ul class="keep"></ul>
+                            <li class="leaf">body &gt;0.00508 -- 1</li>
+                            <ul class="keep"></ul>
+                        </ul>
+                    </ul>
+                </ul>
+                <li class="stem">PresentM &gt;0 </li>
+                <ul class="keep">
+                    <li class="stem">ingest &lt;=0.012121 </li>
+                    <ul class="keep">
+                        <li class="stem">see &lt;=0.024911 </li>
+                        <ul class="keep">
+                            <li class="stem">posemo &lt;=0.047619 </li>
+                            <ul class="keep">
+                                <li class="stem">ProgM &lt;=0 </li>
+                                <ul class="keep">
+                                    <li class="stem">PastM &lt;=0.002669 </li>
+                                    <ul class="keep">
+                                        <li class="stem">ingest &lt;=0.010096 </li>
+                                        <ul class="keep">
+                                            <li class="leaf">i &lt;=0.002275 -- 0</li>
+                                            <ul class="keep"></ul>
+                                            <li class="stem">i &gt;0.002275 </li>
+                                            <ul class="keep">
+                                                <li class="leaf">i &lt;=0.004208 -- 1</li>
+                                                <ul class="keep"></ul>
+                                                <li class="leaf">i &gt;0.004208 -- 0</li>
+                                                <ul class="keep"></ul>
+                                            </ul>
+                                        </ul>
+                                        <li class="leaf">ingest &gt;0.010096 -- 1</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                    <li class="leaf">PastM &gt;0.002669 -- 1</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                                <li class="stem">ProgM &gt;0 </li>
+                                <ul class="keep">
+                                    <li class="stem">cause &lt;=0.028186 </li>
+                                    <ul class="keep">
+                                        <li class="stem">you &lt;=0.004111 </li>
+                                        <ul class="keep">
+                                            <li class="leaf">health &lt;=0.005775 -- 1</li>
+                                            <ul class="keep"></ul>
+                                            <li class="stem">health &gt;0.005775 </li>
+                                            <ul class="keep">
+                                                <li class="stem">certain &lt;=0.010714 </li>
+                                                <ul class="keep">
+                                                    <li class="stem">incl &lt;=0.019577 </li>
+                                                    <ul class="keep">
+                                                        <li class="leaf">shehe &lt;=0.001267 -- 0</li>
+                                                        <ul class="keep"></ul>
+                                                        <li class="leaf">shehe &gt;0.001267 -- 1</li>
+                                                        <ul class="keep"></ul>
+                                                    </ul>
+                                                    <li class="leaf">incl &gt;0.019577 -- 1</li>
+                                                    <ul class="keep"></ul>
+                                                </ul>
+                                                <li class="stem">certain &gt;0.010714 </li>
+                                                <ul class="keep">
+                                                    <li class="stem">FutureM &lt;=0.008762 </li>
+                                                    <ul class="keep">
+                                                        <li class="leaf">humans &lt;=0.005247 -- 1</li>
+                                                        <ul class="keep"></ul>
+                                                        <li class="stem">humans &gt;0.005247 </li>
+                                                        <ul class="keep">
+                                                            <li class="leaf">family &lt;=0.000626 -- 0</li>
+                                                            <ul class="keep"></ul>
+                                                            <li class="stem">family &gt;0.000626 </li>
+                                                            <ul class="keep">
+                                                                <li class="stem">friend &lt;=0.000455 </li>
+                                                                <ul class="keep">
+                                                                    <li class="leaf">ipron &lt;=0.018009 -- 1</li>
+                                                                    <ul class="keep"></ul>
+                                                                    <li class="leaf">ipron &gt;0.018009 -- 0</li>
+                                                                    <ul class="keep"></ul>
+                                                                </ul>
+                                                                <li class="leaf">friend &gt;0.000455 -- 1</li>
+                                                                <ul class="keep"></ul>
+                                                            </ul>
+                                                        </ul>
+                                                    </ul>
+                                                    <li class="leaf">FutureM &gt;0.008762 -- 1</li>
+                                                    <ul class="keep"></ul>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                                        <li class="stem">you &gt;0.004111 </li>
+                                        <ul class="keep">
+                                            <li class="stem">shehe &lt;=0.010039 </li>
+                                            <ul class="keep">
+                                                <li class="stem">body &lt;=0.003872 </li>
+                                                <ul class="keep">
+                                                    <li class="leaf">tentat &lt;=0.000943 -- 0</li>
+                                                    <ul class="keep"></ul>
+                                                    <li class="stem">tentat &gt;0.000943 </li>
+                                                    <ul class="keep">
+                                                        <li class="leaf">we &lt;=0.005464 -- 1</li>
+                                                        <ul class="keep"></ul>
+                                                        <li class="stem">we &gt;0.005464 </li>
+                                                        <ul class="keep">
+                                                            <li class="stem">ProgM &lt;=0.020036 </li>
+                                                            <ul class="keep">
+                                                                <li class="leaf">ProgM &lt;=0.007884 -- 0</li>
+                                                                <ul class="keep"></ul>
+                                                                <li class="leaf">ProgM &gt;0.007884 -- 1</li>
+                                                                <ul class="keep"></ul>
+                                                            </ul>
+                                                            <li class="leaf">ProgM &gt;0.020036 -- 0</li>
+                                                            <ul class="keep"></ul>
+                                                        </ul>
+                                                    </ul>
+                                                </ul>
+                                                <li class="stem">body &gt;0.003872 </li>
+                                                <ul class="keep">
+                                                    <li class="stem">PresentM &lt;=0.008403 </li>
+                                                    <ul class="keep">
+                                                        <li class="leaf">i &lt;=0.000649 -- 0</li>
+                                                        <ul class="keep"></ul>
+                                                        <li class="stem">i &gt;0.000649 </li>
+                                                        <ul class="keep">
+                                                            <li class="stem">feel &lt;=0.007519 </li>
+                                                            <ul class="keep">
+                                                                <li class="leaf">health &lt;=0.002765 -- 1</li>
+                                                                <ul class="keep"></ul>
+                                                                <li class="stem">health &gt;0.002765 </li>
+                                                                <ul class="keep">
+                                                                    <li class="stem">inhib &lt;=0.010727 </li>
+                                                                    <ul class="keep">
+                                                                        <li class="leaf">inhib &lt;=0.006567 -- 0</li>
+                                                                        <ul class="keep"></ul>
+                                                                        <li class="leaf">inhib &gt;0.006567 -- 1</li>
+                                                                        <ul class="keep"></ul>
+                                                                    </ul>
+                                                                    <li class="leaf">inhib &gt;0.010727 -- 0</li>
+                                                                    <ul class="keep"></ul>
+                                                                </ul>
+                                                            </ul>
+                                                            <li class="leaf">feel &gt;0.007519 -- 0</li>
+                                                            <ul class="keep"></ul>
+                                                        </ul>
+                                                    </ul>
+                                                    <li class="stem">PresentM &gt;0.008403 </li>
+                                                    <ul class="keep">
+                                                        <li class="stem">ipron &lt;=0.035491 </li>
+                                                        <ul class="keep">
+                                                            <li class="stem">cause &lt;=0.020833 </li>
+                                                            <ul class="keep">
+                                                                <li class="stem">see &lt;=0.014827 </li>
+                                                                <ul class="keep">
+                                                                    <li class="leaf">hear &lt;=0.011152 -- 1</li>
+                                                                    <ul class="keep"></ul>
+                                                                    <li class="stem">hear &gt;0.011152 </li>
+                                                                    <ul class="keep">
+                                                                        <li class="leaf">family &lt;=0.001407 -- 1</li>
+                                                                        <ul class="keep"></ul>
+                                                                        <li class="leaf">family &gt;0.001407 -- 0</li>
+                                                                        <ul class="keep"></ul>
+                                                                    </ul>
+                                                                </ul>
+                                                                <li class="leaf">see &gt;0.014827 -- 0</li>
+                                                                <ul class="keep"></ul>
+                                                            </ul>
+                                                            <li class="leaf">cause &gt;0.020833 -- 0</li>
+                                                            <ul class="keep"></ul>
+                                                        </ul>
+                                                        <li class="leaf">ipron &gt;0.035491 -- 0</li>
+                                                        <ul class="keep"></ul>
+                                                    </ul>
+                                                </ul>
+                                            </ul>
+                                            <li class="stem">shehe &gt;0.010039 </li>
+                                            <ul class="keep">
+                                                <li class="stem">i &lt;=0.000813 </li>
+                                                <ul class="keep">
+                                                    <li class="leaf">shehe &lt;=0.021245 -- 1</li>
+                                                    <ul class="keep"></ul>
+                                                    <li class="leaf">shehe &gt;0.021245 -- 0</li>
+                                                    <ul class="keep"></ul>
+                                                </ul>
+                                                <li class="leaf">i &gt;0.000813 -- 1</li>
+                                                <ul class="keep"></ul>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                    <li class="stem">cause &gt;0.028186 </li>
+                                    <ul class="keep">
+                                        <li class="stem">ingest &lt;=0.00495 </li>
+                                        <ul class="keep">
+                                            <li class="stem">they &lt;=0.006969 </li>
+                                            <ul class="keep">
+                                                <li class="stem">family &lt;=0.018519 </li>
+                                                <ul class="keep">
+                                                    <li class="stem">feel &lt;=0.009107 </li>
+                                                    <ul class="keep">
+                                                        <li class="leaf">humans &lt;=0.008961 -- 1</li>
+                                                        <ul class="keep"></ul>
+                                                        <li class="stem">humans &gt;0.008961 </li>
+                                                        <ul class="keep">
+                                                            <li class="leaf">PresentM &lt;=0.004405 -- 0</li>
+                                                            <ul class="keep"></ul>
+                                                            <li class="stem">PresentM &gt;0.004405 </li>
+                                                            <ul class="keep">
+                                                                <li class="leaf">humans &lt;=0.010029 -- 0</li>
+                                                                <ul class="keep"></ul>
+                                                                <li class="leaf">humans &gt;0.010029 -- 1</li>
+                                                                <ul class="keep"></ul>
+                                                            </ul>
+                                                        </ul>
+                                                    </ul>
+                                                    <li class="leaf">feel &gt;0.009107 -- 0</li>
+                                                    <ul class="keep"></ul>
+                                                </ul>
+                                                <li class="leaf">family &gt;0.018519 -- 0</li>
+                                                <ul class="keep"></ul>
+                                            </ul>
+                                            <li class="leaf">they &gt;0.006969 -- 0</li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="leaf">ingest &gt;0.00495 -- 0</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                </ul>
+                            </ul>
+                            <li class="stem">posemo &gt;0.047619 </li>
+                            <ul class="keep">
+                                <li class="leaf">shehe &lt;=0.000672 -- 0</li>
+                                <ul class="keep"></ul>
+                                <li class="stem">shehe &gt;0.000672 </li>
+                                <ul class="keep">
+                                    <li class="leaf">you &lt;=0.008865 -- 1</li>
+                                    <ul class="keep"></ul>
+                                    <li class="leaf">you &gt;0.008865 -- 0</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                        <li class="stem">see &gt;0.024911 </li>
+                        <ul class="keep">
+                            <li class="stem">shehe &lt;=0.00117 </li>
+                            <ul class="keep">
+                                <li class="leaf">negemo &lt;=0.010654 -- 0</li>
+                                <ul class="keep"></ul>
+                                <li class="stem">negemo &gt;0.010654 </li>
+                                <ul class="keep">
+                                    <li class="stem">PastM &lt;=0.000695 </li>
+                                    <ul class="keep">
+                                        <li class="leaf">incl &lt;=0.050607 -- 0</li>
+                                        <ul class="keep"></ul>
+                                        <li class="leaf">incl &gt;0.050607 -- 1</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                    <li class="leaf">PastM &gt;0.000695 -- 1</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                            </ul>
+                            <li class="stem">shehe &gt;0.00117 </li>
+                            <ul class="keep">
+                                <li class="leaf">discrep &lt;=0.019742 -- 1</li>
+                                <ul class="keep"></ul>
+                                <li class="leaf">discrep &gt;0.019742 -- 0</li>
+                                <ul class="keep"></ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li class="stem">ingest &gt;0.012121 </li>
+                    <ul class="keep">
+                        <li class="stem">we &lt;=0.001445 </li>
+                        <ul class="keep">
+                            <li class="stem">shehe &lt;=0 </li>
+                            <ul class="keep">
+                                <li class="stem">tentat &lt;=0.016355 </li>
+                                <ul class="keep">
+                                    <li class="stem">ProgM &lt;=0.029851 </li>
+                                    <ul class="keep">
+                                        <li class="stem">FutureM &lt;=0.018349 </li>
+                                        <ul class="keep">
+                                            <li class="stem">PresentM &lt;=0.007021 </li>
+                                            <ul class="keep">
+                                                <li class="leaf">humans &lt;=0.004082 -- 1</li>
+                                                <ul class="keep"></ul>
+                                                <li class="leaf">humans &gt;0.004082 -- 0</li>
+                                                <ul class="keep"></ul>
+                                            </ul>
+                                            <li class="stem">PresentM &gt;0.007021 </li>
+                                            <ul class="keep">
+                                                <li class="stem">family &lt;=0.002994 </li>
+                                                <ul class="keep">
+                                                    <li class="stem">certain &lt;=0.003534 </li>
+                                                    <ul class="keep">
+                                                        <li class="leaf">PastM &lt;=0.002026 -- 0</li>
+                                                        <ul class="keep"></ul>
+                                                        <li class="leaf">PastM &gt;0.002026 -- 1</li>
+                                                        <ul class="keep"></ul>
+                                                    </ul>
+                                                    <li class="leaf">certain &gt;0.003534 -- 1</li>
+                                                    <ul class="keep"></ul>
+                                                </ul>
+                                                <li class="leaf">family &gt;0.002994 -- 0</li>
+                                                <ul class="keep"></ul>
+                                            </ul>
+                                        </ul>
+                                        <li class="leaf">FutureM &gt;0.018349 -- 0</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                    <li class="leaf">ProgM &gt;0.029851 -- 0</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                                <li class="stem">tentat &gt;0.016355 </li>
+                                <ul class="keep">
+                                    <li class="leaf">incl &lt;=0.045948 -- 0</li>
+                                    <ul class="keep"></ul>
+                                    <li class="stem">incl &gt;0.045948 </li>
+                                    <ul class="keep">
+                                        <li class="leaf">excl &lt;=0.012081 -- 1</li>
+                                        <ul class="keep"></ul>
+                                        <li class="stem">excl &gt;0.012081 </li>
+                                        <ul class="keep">
+                                            <li class="leaf">sexual &lt;=0.001453 -- 0</li>
+                                            <ul class="keep"></ul>
+                                            <li class="stem">sexual &gt;0.001453 </li>
+                                            <ul class="keep">
+                                                <li class="leaf">discrep &lt;=0.029304 -- 0</li>
+                                                <ul class="keep"></ul>
+                                                <li class="leaf">discrep &gt;0.029304 -- 1</li>
+                                                <ul class="keep"></ul>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                            </ul>
+                            <li class="stem">shehe &gt;0 </li>
+                            <ul class="keep">
+                                <li class="stem">health &lt;=0.011086 </li>
+                                <ul class="keep">
+                                    <li class="leaf">you &lt;=0.004121 -- 1</li>
+                                    <ul class="keep"></ul>
+                                    <li class="stem">you &gt;0.004121 </li>
+                                    <ul class="keep">
+                                        <li class="leaf">cause &lt;=0.009223 -- 1</li>
+                                        <ul class="keep"></ul>
+                                        <li class="leaf">cause &gt;0.009223 -- 0</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                </ul>
+                                <li class="stem">health &gt;0.011086 </li>
+                                <ul class="keep">
+                                    <li class="leaf">they &lt;=0.002439 -- 0</li>
+                                    <ul class="keep"></ul>
+                                    <li class="leaf">they &gt;0.002439 -- 1</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                        <li class="stem">we &gt;0.001445 </li>
+                        <ul class="keep">
+                            <li class="leaf">hear &lt;=0.009709 -- 0</li>
+                            <ul class="keep"></ul>
+                            <li class="stem">hear &gt;0.009709 </li>
+                            <ul class="keep">
+                                <li class="leaf">you &lt;=0.007962 -- 1</li>
+                                <ul class="keep"></ul>
+                                <li class="leaf">you &gt;0.007962 -- 0</li>
+                                <ul class="keep"></ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+            </ul>
+            <li class="stem">health &gt;0.014815 </li>
+            <ul class="keep">
+                <li class="stem">ingest &lt;=0.007701 </li>
+                <ul class="keep">
+                    <li class="stem">shehe &lt;=0.009776 </li>
+                    <ul class="keep">
+                        <li class="stem">body &lt;=0.007813 </li>
+                        <ul class="keep">
+                            <li class="stem">inhib &lt;=0.007344 </li>
+                            <ul class="keep">
+                                <li class="leaf">PresentM &lt;=0.001563 -- 0</li>
+                                <ul class="keep"></ul>
+                                <li class="stem">PresentM &gt;0.001563 </li>
+                                <ul class="keep">
+                                    <li class="stem">excl &lt;=0.005666 </li>
+                                    <ul class="keep">
+                                        <li class="leaf">you &lt;=0.017544 -- 1</li>
+                                        <ul class="keep"></ul>
+                                        <li class="leaf">you &gt;0.017544 -- 0</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                    <li class="leaf">excl &gt;0.005666 -- 0</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                            </ul>
+                            <li class="stem">inhib &gt;0.007344 </li>
+                            <ul class="keep">
+                                <li class="stem">we &lt;=0.004246 </li>
+                                <ul class="keep">
+                                    <li class="stem">cause &lt;=0.031567 </li>
+                                    <ul class="keep">
+                                        <li class="stem">PastM &lt;=0.002417 </li>
+                                        <ul class="keep">
+                                            <li class="stem">ingest &lt;=0.004561 </li>
+                                            <ul class="keep">
+                                                <li class="leaf">see &lt;=0.019847 -- 1</li>
+                                                <ul class="keep"></ul>
+                                                <li class="leaf">see &gt;0.019847 -- 0</li>
+                                                <ul class="keep"></ul>
+                                            </ul>
+                                            <li class="leaf">ingest &gt;0.004561 -- 0</li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="leaf">PastM &gt;0.002417 -- 1</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                    <li class="leaf">cause &gt;0.031567 -- 0</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                                <li class="stem">we &gt;0.004246 </li>
+                                <ul class="keep">
+                                    <li class="leaf">sexual &lt;=0.001548 -- 0</li>
+                                    <ul class="keep"></ul>
+                                    <li class="stem">sexual &gt;0.001548 </li>
+                                    <ul class="keep">
+                                        <li class="leaf">incl &lt;=0.043977 -- 0</li>
+                                        <ul class="keep"></ul>
+                                        <li class="leaf">incl &gt;0.043977 -- 1</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                        <li class="stem">body &gt;0.007813 </li>
+                        <ul class="keep">
+                            <li class="stem">we &lt;=0 </li>
+                            <ul class="keep">
+                                <li class="stem">family &lt;=0.011765 </li>
+                                <ul class="keep">
+                                    <li class="stem">posemo &lt;=0.01306 </li>
+                                    <ul class="keep">
+                                        <li class="stem">cause &lt;=0.016447 </li>
+                                        <ul class="keep">
+                                            <li class="leaf">FutureM &lt;=0.001168 -- 0</li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">FutureM &gt;0.001168 -- 1</li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="stem">cause &gt;0.016447 </li>
+                                        <ul class="keep">
+                                            <li class="leaf">inhib &lt;=0.009967 -- 0</li>
+                                            <ul class="keep"></ul>
+                                            <li class="stem">inhib &gt;0.009967 </li>
+                                            <ul class="keep">
+                                                <li class="stem">shehe &lt;=0.00068 </li>
+                                                <ul class="keep">
+                                                    <li class="leaf">excl &lt;=0.019563 -- 1</li>
+                                                    <ul class="keep"></ul>
+                                                    <li class="leaf">excl &gt;0.019563 -- 0</li>
+                                                    <ul class="keep"></ul>
+                                                </ul>
+                                                <li class="leaf">shehe &gt;0.00068 -- 1</li>
+                                                <ul class="keep"></ul>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                    <li class="leaf">posemo &gt;0.01306 -- 0</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                                <li class="stem">family &gt;0.011765 </li>
+                                <ul class="keep">
+                                    <li class="leaf">shehe &lt;=0.000458 -- 0</li>
+                                    <ul class="keep"></ul>
+                                    <li class="leaf">shehe &gt;0.000458 -- 1</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                            </ul>
+                            <li class="leaf">we &gt;0 -- 0</li>
+                            <ul class="keep"></ul>
+                        </ul>
+                    </ul>
+                    <li class="stem">shehe &gt;0.009776 </li>
+                    <ul class="keep">
+                        <li class="stem">you &lt;=0.007835 </li>
+                        <ul class="keep">
+                            <li class="stem">PastM &lt;=0.004449 </li>
+                            <ul class="keep">
+                                <li class="stem">they &lt;=0.00355 </li>
+                                <ul class="keep">
+                                    <li class="leaf">family &lt;=0.014286 -- 0</li>
+                                    <ul class="keep"></ul>
+                                    <li class="leaf">family &gt;0.014286 -- 1</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                                <li class="leaf">they &gt;0.00355 -- 1</li>
+                                <ul class="keep"></ul>
+                            </ul>
+                            <li class="leaf">PastM &gt;0.004449 -- 1</li>
+                            <ul class="keep"></ul>
+                        </ul>
+                        <li class="leaf">you &gt;0.007835 -- 0</li>
+                        <ul class="keep"></ul>
+                    </ul>
+                </ul>
+                <li class="stem">ingest &gt;0.007701 </li>
+                <ul class="keep">
+                    <li class="stem">you &lt;=0.002649 </li>
+                    <ul class="keep">
+                        <li class="leaf">hear &lt;=0.006178 -- 0</li>
+                        <ul class="keep"></ul>
+                        <li class="stem">hear &gt;0.006178 </li>
+                        <ul class="keep">
+                            <li class="leaf">shehe &lt;=0.002799 -- 0</li>
+                            <ul class="keep"></ul>
+                            <li class="stem">shehe &gt;0.002799 </li>
+                            <ul class="keep">
+                                <li class="leaf">family &lt;=0.002387 -- 1</li>
+                                <ul class="keep"></ul>
+                                <li class="stem">family &gt;0.002387 </li>
+                                <ul class="keep">
+                                    <li class="leaf">family &lt;=0.00995 -- 0</li>
+                                    <ul class="keep"></ul>
+                                    <li class="leaf">family &gt;0.00995 -- 1</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li class="leaf">you &gt;0.002649 -- 0</li>
+                    <ul class="keep"></ul>
+                </ul>
+            </ul>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script language="javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script language="javascript">
+    //模拟数据
+
+    $(function() {
+        //控制菜单的隐藏显示
+        $("ul[class] li").each(function() {
+            $(this).click(function() {
+                $(this).next().toggle("easeOutElastic");
+            });
+        });
+    })
+</script>

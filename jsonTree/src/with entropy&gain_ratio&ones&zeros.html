@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -54,13 +54,13 @@
     //模拟数据
     var jsonData = "";
     $.ajax({
-        url: "jsonFileChi.json",
+        url: "jsonTree-细分消极维度.json",
         data: {},
         type: "POST",
         dataType: "JSON",
         success: function(result) {
             jsonData = result;
-            console.log(jsonData)
+            // console.log(jsonData)
             main();
         }
     });
@@ -69,12 +69,27 @@
     //主方法，运用递归实现
     function createTree(jsons) {
         if (jsons != null) {
-            var ul = '<ul class="">';
+            var ul = '<ul class="keep">';
             for (var i = 0; i < jsons.length; i++) {
                 if (typeof(jsons[i].result) == "undefined") {
-                    ul += '<li class="stem">' + jsons[i].name + " " + jsons[i].op + "</li>";
+                    ul += '<li class="stem">' +
+                        jsons[i].name + " " +
+                        jsons[i].op + jsons[i].threshold + " " +
+                        "entropy= " + jsons[i].entropy + ", " +
+                        "gain ratio= " + jsons[i].gain_ratio + ", " +
+                        "新闻的数目= " + jsons[i].ones + ", " +
+                        "谣言的数目= " + jsons[i].zeros + ", " +
+                        "</li>";
                 } else {
-                    ul += '<li class="leaf">' + jsons[i].name + " " + jsons[i].op + " -- " + jsons[i].result + "</li>";
+                    ul += '<li class="leaf">' +
+                        jsons[i].name + " " +
+                        jsons[i].op + jsons[i].threshold +
+                        " -- " + jsons[i].result + ", " +
+                        "entropy= " + jsons[i].entropy + ", " +
+                        "gain ratio= " + jsons[i].gain_ratio + ", " +
+                        "新闻的数目= " + jsons[i].ones + ", " +
+                        "谣言的数目= " + jsons[i].zeros + ", " +
+                        "</li>";
                 }
                 ul += createTree(jsons[i].node);
             }
@@ -84,7 +99,7 @@
     }
 
     function main() {
-        var ul = createTree(jsonData);
+        var ul = createTree(jsonData.node);
 
         $("#continer").append(ul);
 

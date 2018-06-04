@@ -1,0 +1,1352 @@
+{
+    "node": [{
+            "name": "bio",
+            "op": "<=",
+            "threshold": 0.035587,
+            "node": [{
+                    "name": "bio",
+                    "op": "<=",
+                    "threshold": 0,
+                    "node": [{
+                            "name": "percept",
+                            "op": "<=",
+                            "threshold": 0.043847,
+                            "node": [{
+                                    "name": "TenseM",
+                                    "op": "<=",
+                                    "threshold": 0.007092,
+                                    "result": 0,
+                                    "zeros": 196,
+                                    "ones": 0,
+                                    "node": [],
+                                    "gain_ratio": 0,
+                                    "entropy": 0
+                                },
+                                {
+                                    "name": "TenseM",
+                                    "op": ">",
+                                    "threshold": 0.007092,
+                                    "node": [{
+                                            "name": "pronoun",
+                                            "op": "<=",
+                                            "threshold": 0.063492,
+                                            "node": [{
+                                                    "name": "affect",
+                                                    "op": "<=",
+                                                    "threshold": 0.070968,
+                                                    "node": [{
+                                                            "name": "percept",
+                                                            "op": "<=",
+                                                            "threshold": 0.001536,
+                                                            "node": [{
+                                                                    "name": "TenseM",
+                                                                    "op": "<=",
+                                                                    "threshold": 0.062069,
+                                                                    "node": [{
+                                                                            "name": "social",
+                                                                            "op": "<=",
+                                                                            "threshold": 0.021645,
+                                                                            "result": 1,
+                                                                            "zeros": 0,
+                                                                            "ones": 2,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0
+                                                                        },
+                                                                        {
+                                                                            "name": "social",
+                                                                            "op": ">",
+                                                                            "threshold": 0.021645,
+                                                                            "result": 0,
+                                                                            "zeros": 9,
+                                                                            "ones": 1,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0.4689955935892812
+                                                                        }
+                                                                    ],
+                                                                    "gain_ratio": 0.6468214774323336,
+                                                                    "entropy": 0.8112781244591328,
+                                                                    "zeros": 9,
+                                                                    "ones": 3
+                                                                },
+                                                                {
+                                                                    "name": "TenseM",
+                                                                    "op": ">",
+                                                                    "threshold": 0.062069,
+                                                                    "result": 0,
+                                                                    "zeros": 20,
+                                                                    "ones": 0,
+                                                                    "node": [],
+                                                                    "gain_ratio": 0,
+                                                                    "entropy": 0
+                                                                }
+                                                            ],
+                                                            "gain_ratio": 0.15154027581540958,
+                                                            "entropy": 0.4488644887230294,
+                                                            "zeros": 29,
+                                                            "ones": 3
+                                                        },
+                                                        {
+                                                            "name": "percept",
+                                                            "op": ">",
+                                                            "threshold": 0.001536,
+                                                            "node": [{
+                                                                    "name": "social",
+                                                                    "op": "<=",
+                                                                    "threshold": 0.052863,
+                                                                    "result": 1,
+                                                                    "zeros": 3,
+                                                                    "ones": 39,
+                                                                    "node": [],
+                                                                    "gain_ratio": 0,
+                                                                    "entropy": 0.37123232664087563
+                                                                },
+                                                                {
+                                                                    "name": "social",
+                                                                    "op": ">",
+                                                                    "threshold": 0.052863,
+                                                                    "node": [{
+                                                                            "name": "affect",
+                                                                            "op": "<=",
+                                                                            "threshold": 0.052375,
+                                                                            "node": [{
+                                                                                    "name": "pronoun",
+                                                                                    "op": "<=",
+                                                                                    "threshold": 0.019064,
+                                                                                    "result": 0,
+                                                                                    "zeros": 4,
+                                                                                    "ones": 0,
+                                                                                    "node": [],
+                                                                                    "gain_ratio": 0,
+                                                                                    "entropy": 0
+                                                                                },
+                                                                                {
+                                                                                    "name": "pronoun",
+                                                                                    "op": ">",
+                                                                                    "threshold": 0.019064,
+                                                                                    "node": [{
+                                                                                            "name": "affect",
+                                                                                            "op": "<=",
+                                                                                            "threshold": 0.030612,
+                                                                                            "result": 0,
+                                                                                            "zeros": 5,
+                                                                                            "ones": 1,
+                                                                                            "node": [],
+                                                                                            "gain_ratio": 0,
+                                                                                            "entropy": 0.6500224216483541
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "affect",
+                                                                                            "op": ">",
+                                                                                            "threshold": 0.030612,
+                                                                                            "result": 1,
+                                                                                            "zeros": 0,
+                                                                                            "ones": 6,
+                                                                                            "node": [],
+                                                                                            "gain_ratio": 0,
+                                                                                            "entropy": 0
+                                                                                        }
+                                                                                    ],
+                                                                                    "gain_ratio": 0.6548575458269756,
+                                                                                    "entropy": 0.9798687566511527,
+                                                                                    "zeros": 5,
+                                                                                    "ones": 7
+                                                                                }
+                                                                            ],
+                                                                            "gain_ratio": 0.31283703226847903,
+                                                                            "entropy": 0.9886994082884974,
+                                                                            "zeros": 9,
+                                                                            "ones": 7
+                                                                        },
+                                                                        {
+                                                                            "name": "affect",
+                                                                            "op": ">",
+                                                                            "threshold": 0.052375,
+                                                                            "result": 0,
+                                                                            "zeros": 8,
+                                                                            "ones": 0,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0
+                                                                        }
+                                                                    ],
+                                                                    "gain_ratio": 0.2305700652495857,
+                                                                    "entropy": 0.8708644692353646,
+                                                                    "zeros": 17,
+                                                                    "ones": 7
+                                                                }
+                                                            ],
+                                                            "gain_ratio": 0.35112703011637814,
+                                                            "entropy": 0.884963636383153,
+                                                            "zeros": 20,
+                                                            "ones": 46
+                                                        }
+                                                    ],
+                                                    "gain_ratio": 0.2824800997826195,
+                                                    "entropy": 1,
+                                                    "zeros": 49,
+                                                    "ones": 49
+                                                },
+                                                {
+                                                    "name": "affect",
+                                                    "op": ">",
+                                                    "threshold": 0.070968,
+                                                    "result": 0,
+                                                    "zeros": 32,
+                                                    "ones": 1,
+                                                    "node": [],
+                                                    "gain_ratio": 0,
+                                                    "entropy": 0.19590927087360493
+                                                }
+                                            ],
+                                            "gain_ratio": 0.19867236784984785,
+                                            "entropy": 0.9592194922062226,
+                                            "zeros": 81,
+                                            "ones": 50
+                                        },
+                                        {
+                                            "name": "pronoun",
+                                            "op": ">",
+                                            "threshold": 0.063492,
+                                            "result": 0,
+                                            "zeros": 75,
+                                            "ones": 0,
+                                            "node": [],
+                                            "gain_ratio": 0,
+                                            "entropy": 0
+                                        }
+                                    ],
+                                    "gain_ratio": 0.20035889275846427,
+                                    "entropy": 0.7995318105266798,
+                                    "zeros": 156,
+                                    "ones": 50
+                                }
+                            ],
+                            "gain_ratio": 0.13216469072851983,
+                            "entropy": 0.5418160214051355,
+                            "zeros": 352,
+                            "ones": 50
+                        },
+                        {
+                            "name": "percept",
+                            "op": ">",
+                            "threshold": 0.043847,
+                            "result": 0,
+                            "zeros": 441,
+                            "ones": 0,
+                            "node": [],
+                            "gain_ratio": 0,
+                            "entropy": 0
+                        }
+                    ],
+                    "gain_ratio": 0.0664353709289321,
+                    "entropy": 0.32470766475941193,
+                    "zeros": 793,
+                    "ones": 50
+                },
+                {
+                    "name": "bio",
+                    "op": ">",
+                    "threshold": 0,
+                    "node": [{
+                            "name": "bio",
+                            "op": "<=",
+                            "threshold": 0.014167,
+                            "node": [{
+                                    "name": "pronoun",
+                                    "op": "<=",
+                                    "threshold": 0.040625,
+                                    "node": [{
+                                            "name": "affect",
+                                            "op": "<=",
+                                            "threshold": 0.050076,
+                                            "node": [{
+                                                    "name": "social",
+                                                    "op": "<=",
+                                                    "threshold": 0.047157,
+                                                    "result": 1,
+                                                    "zeros": 6,
+                                                    "ones": 320,
+                                                    "node": [],
+                                                    "gain_ratio": 0,
+                                                    "entropy": 0.13238838316272517
+                                                },
+                                                {
+                                                    "name": "social",
+                                                    "op": ">",
+                                                    "threshold": 0.047157,
+                                                    "node": [{
+                                                            "name": "percept",
+                                                            "op": "<=",
+                                                            "threshold": 0.042929,
+                                                            "node": [{
+                                                                    "name": "affect",
+                                                                    "op": "<=",
+                                                                    "threshold": 0.015406,
+                                                                    "result": 0,
+                                                                    "zeros": 3,
+                                                                    "ones": 1,
+                                                                    "node": [],
+                                                                    "gain_ratio": 0,
+                                                                    "entropy": 0.8112781244591328
+                                                                },
+                                                                {
+                                                                    "name": "affect",
+                                                                    "op": ">",
+                                                                    "threshold": 0.015406,
+                                                                    "result": 1,
+                                                                    "zeros": 4,
+                                                                    "ones": 65,
+                                                                    "node": [],
+                                                                    "gain_ratio": 0,
+                                                                    "entropy": 0.3193373865339728
+                                                                }
+                                                            ],
+                                                            "gain_ratio": 0.35747250256376634,
+                                                            "entropy": 0.4558314584408234,
+                                                            "zeros": 7,
+                                                            "ones": 66
+                                                        },
+                                                        {
+                                                            "name": "percept",
+                                                            "op": ">",
+                                                            "threshold": 0.042929,
+                                                            "result": 0,
+                                                            "zeros": 3,
+                                                            "ones": 1,
+                                                            "node": [],
+                                                            "gain_ratio": 0,
+                                                            "entropy": 0.8112781244591328
+                                                        }
+                                                    ],
+                                                    "gain_ratio": 0.28099597781477514,
+                                                    "entropy": 0.5570819081034161,
+                                                    "zeros": 10,
+                                                    "ones": 67
+                                                }
+                                            ],
+                                            "gain_ratio": 0.03892573552008312,
+                                            "entropy": 0.24092527014611437,
+                                            "zeros": 16,
+                                            "ones": 387
+                                        },
+                                        {
+                                            "name": "affect",
+                                            "op": ">",
+                                            "threshold": 0.050076,
+                                            "node": [{
+                                                    "name": "bio",
+                                                    "op": "<=",
+                                                    "threshold": 0.00489,
+                                                    "result": 1,
+                                                    "zeros": 0,
+                                                    "ones": 32,
+                                                    "node": [],
+                                                    "gain_ratio": 0,
+                                                    "entropy": 0
+                                                },
+                                                {
+                                                    "name": "bio",
+                                                    "op": ">",
+                                                    "threshold": 0.00489,
+                                                    "node": [{
+                                                            "name": "TenseM",
+                                                            "op": "<=",
+                                                            "threshold": 0.026397,
+                                                            "node": [{
+                                                                    "name": "percept",
+                                                                    "op": "<=",
+                                                                    "threshold": 0.0209,
+                                                                    "node": [{
+                                                                            "name": "affect",
+                                                                            "op": "<=",
+                                                                            "threshold": 0.062361,
+                                                                            "result": 0,
+                                                                            "zeros": 3,
+                                                                            "ones": 1,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0.8112781244591328
+                                                                        },
+                                                                        {
+                                                                            "name": "affect",
+                                                                            "op": ">",
+                                                                            "threshold": 0.062361,
+                                                                            "result": 1,
+                                                                            "zeros": 0,
+                                                                            "ones": 8,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0
+                                                                        }
+                                                                    ],
+                                                                    "gain_ratio": 0.5889736868180786,
+                                                                    "entropy": 0.8112781244591328,
+                                                                    "zeros": 3,
+                                                                    "ones": 9
+                                                                },
+                                                                {
+                                                                    "name": "percept",
+                                                                    "op": ">",
+                                                                    "threshold": 0.0209,
+                                                                    "result": 0,
+                                                                    "zeros": 6,
+                                                                    "ones": 0,
+                                                                    "node": [],
+                                                                    "gain_ratio": 0,
+                                                                    "entropy": 0
+                                                                }
+                                                            ],
+                                                            "gain_ratio": 0.5,
+                                                            "entropy": 1,
+                                                            "zeros": 9,
+                                                            "ones": 9
+                                                        },
+                                                        {
+                                                            "name": "TenseM",
+                                                            "op": ">",
+                                                            "threshold": 0.026397,
+                                                            "node": [{
+                                                                    "name": "pronoun",
+                                                                    "op": "<=",
+                                                                    "threshold": 0.028662,
+                                                                    "node": [{
+                                                                            "name": "social",
+                                                                            "op": "<=",
+                                                                            "threshold": 0.06079,
+                                                                            "node": [{
+                                                                                    "name": "bio",
+                                                                                    "op": "<=",
+                                                                                    "threshold": 0.01147,
+                                                                                    "result": 1,
+                                                                                    "zeros": 0,
+                                                                                    "ones": 15,
+                                                                                    "node": [],
+                                                                                    "gain_ratio": 0,
+                                                                                    "entropy": 0
+                                                                                },
+                                                                                {
+                                                                                    "name": "bio",
+                                                                                    "op": ">",
+                                                                                    "threshold": 0.01147,
+                                                                                    "node": [{
+                                                                                            "name": "cogmech",
+                                                                                            "op": "<=",
+                                                                                            "threshold": 0.104387,
+                                                                                            "result": 1,
+                                                                                            "zeros": 0,
+                                                                                            "ones": 2,
+                                                                                            "node": [],
+                                                                                            "gain_ratio": 0,
+                                                                                            "entropy": 0
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "cogmech",
+                                                                                            "op": ">",
+                                                                                            "threshold": 0.104387,
+                                                                                            "result": 0,
+                                                                                            "zeros": 4,
+                                                                                            "ones": 1,
+                                                                                            "node": [],
+                                                                                            "gain_ratio": 0,
+                                                                                            "entropy": 0.7219280948873623
+                                                                                        }
+                                                                                    ],
+                                                                                    "gain_ratio": 0.5440320022665034,
+                                                                                    "entropy": 0.9852281360342516,
+                                                                                    "zeros": 4,
+                                                                                    "ones": 3
+                                                                                }
+                                                                            ],
+                                                                            "gain_ratio": 0.41063775967398153,
+                                                                            "entropy": 0.6840384356390417,
+                                                                            "zeros": 4,
+                                                                            "ones": 18
+                                                                        },
+                                                                        {
+                                                                            "name": "social",
+                                                                            "op": ">",
+                                                                            "threshold": 0.06079,
+                                                                            "result": 0,
+                                                                            "zeros": 2,
+                                                                            "ones": 0,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0
+                                                                        }
+                                                                    ],
+                                                                    "gain_ratio": 0.44522810430465803,
+                                                                    "entropy": 0.8112781244591328,
+                                                                    "zeros": 6,
+                                                                    "ones": 18
+                                                                },
+                                                                {
+                                                                    "name": "pronoun",
+                                                                    "op": ">",
+                                                                    "threshold": 0.028662,
+                                                                    "result": 1,
+                                                                    "zeros": 0,
+                                                                    "ones": 20,
+                                                                    "node": [],
+                                                                    "gain_ratio": 0,
+                                                                    "entropy": 0
+                                                                }
+                                                            ],
+                                                            "gain_ratio": 0.1329138246485477,
+                                                            "entropy": 0.5746356978376794,
+                                                            "zeros": 6,
+                                                            "ones": 38
+                                                        }
+                                                    ],
+                                                    "gain_ratio": 0.11518955806551116,
+                                                    "entropy": 0.7982441335646698,
+                                                    "zeros": 15,
+                                                    "ones": 47
+                                                }
+                                            ],
+                                            "gain_ratio": 0.11541958661077399,
+                                            "entropy": 0.6332905746550958,
+                                            "zeros": 15,
+                                            "ones": 79
+                                        }
+                                    ],
+                                    "gain_ratio": 0.030962776880189096,
+                                    "entropy": 0.33679856262689833,
+                                    "zeros": 31,
+                                    "ones": 466
+                                },
+                                {
+                                    "name": "pronoun",
+                                    "op": ">",
+                                    "threshold": 0.040625,
+                                    "node": [{
+                                            "name": "percept",
+                                            "op": "<=",
+                                            "threshold": 0.035862,
+                                            "node": [{
+                                                    "name": "TenseM",
+                                                    "op": "<=",
+                                                    "threshold": 0.022436,
+                                                    "node": [{
+                                                            "name": "affect",
+                                                            "op": "<=",
+                                                            "threshold": 0.034693,
+                                                            "result": 1,
+                                                            "zeros": 0,
+                                                            "ones": 2,
+                                                            "node": [],
+                                                            "gain_ratio": 0,
+                                                            "entropy": 0
+                                                        },
+                                                        {
+                                                            "name": "affect",
+                                                            "op": ">",
+                                                            "threshold": 0.034693,
+                                                            "node": [{
+                                                                    "name": "pronoun",
+                                                                    "op": "<=",
+                                                                    "threshold": 0.059233,
+                                                                    "result": 0,
+                                                                    "zeros": 7,
+                                                                    "ones": 0,
+                                                                    "node": [],
+                                                                    "gain_ratio": 0,
+                                                                    "entropy": 0
+                                                                },
+                                                                {
+                                                                    "name": "pronoun",
+                                                                    "op": ">",
+                                                                    "threshold": 0.059233,
+                                                                    "node": [{
+                                                                            "name": "pronoun",
+                                                                            "op": "<=",
+                                                                            "threshold": 0.09375,
+                                                                            "result": 1,
+                                                                            "zeros": 0,
+                                                                            "ones": 2,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0
+                                                                        },
+                                                                        {
+                                                                            "name": "pronoun",
+                                                                            "op": ">",
+                                                                            "threshold": 0.09375,
+                                                                            "result": 0,
+                                                                            "zeros": 2,
+                                                                            "ones": 0,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0
+                                                                        }
+                                                                    ],
+                                                                    "gain_ratio": 1,
+                                                                    "entropy": 1,
+                                                                    "zeros": 2,
+                                                                    "ones": 2
+                                                                }
+                                                            ],
+                                                            "gain_ratio": 0.33881307108262976,
+                                                            "entropy": 0.6840384356390417,
+                                                            "zeros": 9,
+                                                            "ones": 2
+                                                        }
+                                                    ],
+                                                    "gain_ratio": 0.5032270699161941,
+                                                    "entropy": 0.8904916402194913,
+                                                    "zeros": 9,
+                                                    "ones": 4
+                                                },
+                                                {
+                                                    "name": "TenseM",
+                                                    "op": ">",
+                                                    "threshold": 0.022436,
+                                                    "result": 1,
+                                                    "zeros": 34,
+                                                    "ones": 120,
+                                                    "node": [],
+                                                    "gain_ratio": 0,
+                                                    "entropy": 0.761587786957669
+                                                }
+                                            ],
+                                            "gain_ratio": 0.1300389885300707,
+                                            "entropy": 0.8229274844491258,
+                                            "zeros": 43,
+                                            "ones": 124
+                                        },
+                                        {
+                                            "name": "percept",
+                                            "op": ">",
+                                            "threshold": 0.035862,
+                                            "node": [{
+                                                    "name": "cogmech",
+                                                    "op": "<=",
+                                                    "threshold": 0.143705,
+                                                    "node": [{
+                                                            "name": "TenseM",
+                                                            "op": "<=",
+                                                            "threshold": 0.028736,
+                                                            "result": 0,
+                                                            "zeros": 2,
+                                                            "ones": 0,
+                                                            "node": [],
+                                                            "gain_ratio": 0,
+                                                            "entropy": 0
+                                                        },
+                                                        {
+                                                            "name": "TenseM",
+                                                            "op": ">",
+                                                            "threshold": 0.028736,
+                                                            "result": 1,
+                                                            "zeros": 0,
+                                                            "ones": 5,
+                                                            "node": [],
+                                                            "gain_ratio": 0,
+                                                            "entropy": 0
+                                                        }
+                                                    ],
+                                                    "gain_ratio": 1,
+                                                    "entropy": 0.863120568566631,
+                                                    "zeros": 2,
+                                                    "ones": 5
+                                                },
+                                                {
+                                                    "name": "cogmech",
+                                                    "op": ">",
+                                                    "threshold": 0.143705,
+                                                    "result": 0,
+                                                    "zeros": 21,
+                                                    "ones": 3,
+                                                    "node": [],
+                                                    "gain_ratio": 0,
+                                                    "entropy": 0.5435644431995964
+                                                }
+                                            ],
+                                            "gain_ratio": 0.27002531259841384,
+                                            "entropy": 0.8238116333123173,
+                                            "zeros": 23,
+                                            "ones": 8
+                                        }
+                                    ],
+                                    "gain_ratio": 0.15211722537909053,
+                                    "entropy": 0.9182958340544896,
+                                    "zeros": 66,
+                                    "ones": 132
+                                }
+                            ],
+                            "gain_ratio": 0.09355193622462382,
+                            "entropy": 0.583107229679045,
+                            "zeros": 97,
+                            "ones": 598
+                        },
+                        {
+                            "name": "bio",
+                            "op": ">",
+                            "threshold": 0.014167,
+                            "node": [{
+                                    "name": "percept",
+                                    "op": "<=",
+                                    "threshold": 0.051532,
+                                    "node": [{
+                                            "name": "TenseM",
+                                            "op": "<=",
+                                            "threshold": 0.033563,
+                                            "node": [{
+                                                    "name": "percept",
+                                                    "op": "<=",
+                                                    "threshold": 0.014437,
+                                                    "node": [{
+                                                            "name": "TenseM",
+                                                            "op": "<=",
+                                                            "threshold": 0.015038,
+                                                            "result": 0,
+                                                            "zeros": 10,
+                                                            "ones": 2,
+                                                            "node": [],
+                                                            "gain_ratio": 0,
+                                                            "entropy": 0.6500224216483541
+                                                        },
+                                                        {
+                                                            "name": "TenseM",
+                                                            "op": ">",
+                                                            "threshold": 0.015038,
+                                                            "node": [{
+                                                                    "name": "pronoun",
+                                                                    "op": "<=",
+                                                                    "threshold": 0.018919,
+                                                                    "node": [{
+                                                                            "name": "affect",
+                                                                            "op": "<=",
+                                                                            "threshold": 0.030869,
+                                                                            "node": [{
+                                                                                    "name": "percept",
+                                                                                    "op": "<=",
+                                                                                    "threshold": 0.011673,
+                                                                                    "result": 1,
+                                                                                    "zeros": 0,
+                                                                                    "ones": 3,
+                                                                                    "node": [],
+                                                                                    "gain_ratio": 0,
+                                                                                    "entropy": 0
+                                                                                },
+                                                                                {
+                                                                                    "name": "percept",
+                                                                                    "op": ">",
+                                                                                    "threshold": 0.011673,
+                                                                                    "result": 0,
+                                                                                    "zeros": 2,
+                                                                                    "ones": 0,
+                                                                                    "node": [],
+                                                                                    "gain_ratio": 0,
+                                                                                    "entropy": 0
+                                                                                }
+                                                                            ],
+                                                                            "gain_ratio": 1,
+                                                                            "entropy": 0.9709505944546686,
+                                                                            "zeros": 2,
+                                                                            "ones": 3
+                                                                        },
+                                                                        {
+                                                                            "name": "affect",
+                                                                            "op": ">",
+                                                                            "threshold": 0.030869,
+                                                                            "result": 1,
+                                                                            "zeros": 0,
+                                                                            "ones": 14,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0
+                                                                        }
+                                                                    ],
+                                                                    "gain_ratio": 0.2765538538909833,
+                                                                    "entropy": 0.4854607607459134,
+                                                                    "zeros": 2,
+                                                                    "ones": 17
+                                                                },
+                                                                {
+                                                                    "name": "pronoun",
+                                                                    "op": ">",
+                                                                    "threshold": 0.018919,
+                                                                    "node": [{
+                                                                            "name": "cogmech",
+                                                                            "op": "<=",
+                                                                            "threshold": 0.141491,
+                                                                            "result": 1,
+                                                                            "zeros": 1,
+                                                                            "ones": 8,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0.5032583347756457
+                                                                        },
+                                                                        {
+                                                                            "name": "cogmech",
+                                                                            "op": ">",
+                                                                            "threshold": 0.141491,
+                                                                            "result": 0,
+                                                                            "zeros": 14,
+                                                                            "ones": 8,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0.9456603046006402
+                                                                        }
+                                                                    ],
+                                                                    "gain_ratio": 0.20943545534966207,
+                                                                    "entropy": 0.9992492479956565,
+                                                                    "zeros": 15,
+                                                                    "ones": 16
+                                                                }
+                                                            ],
+                                                            "gain_ratio": 0.12609998239068834,
+                                                            "entropy": 0.92481870497303,
+                                                            "zeros": 17,
+                                                            "ones": 33
+                                                        }
+                                                    ],
+                                                    "gain_ratio": 0.16410598155949466,
+                                                    "entropy": 0.987956501491916,
+                                                    "zeros": 27,
+                                                    "ones": 35
+                                                },
+                                                {
+                                                    "name": "percept",
+                                                    "op": ">",
+                                                    "threshold": 0.014437,
+                                                    "node": [{
+                                                            "name": "pronoun",
+                                                            "op": "<=",
+                                                            "threshold": 0.016226,
+                                                            "node": [{
+                                                                    "name": "affect",
+                                                                    "op": "<=",
+                                                                    "threshold": 0.019724,
+                                                                    "result": 1,
+                                                                    "zeros": 1,
+                                                                    "ones": 10,
+                                                                    "node": [],
+                                                                    "gain_ratio": 0,
+                                                                    "entropy": 0.4394969869215134
+                                                                },
+                                                                {
+                                                                    "name": "affect",
+                                                                    "op": ">",
+                                                                    "threshold": 0.019724,
+                                                                    "node": [{
+                                                                            "name": "TenseM",
+                                                                            "op": "<=",
+                                                                            "threshold": 0.022544,
+                                                                            "result": 0,
+                                                                            "zeros": 13,
+                                                                            "ones": 0,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0
+                                                                        },
+                                                                        {
+                                                                            "name": "TenseM",
+                                                                            "op": ">",
+                                                                            "threshold": 0.022544,
+                                                                            "node": [{
+                                                                                    "name": "social",
+                                                                                    "op": "<=",
+                                                                                    "threshold": 0.016014,
+                                                                                    "node": [{
+                                                                                            "name": "pronoun",
+                                                                                            "op": "<=",
+                                                                                            "threshold": 0.012658,
+                                                                                            "node": [{
+                                                                                                    "name": "social",
+                                                                                                    "op": "<=",
+                                                                                                    "threshold": 0.003676,
+                                                                                                    "result": 0,
+                                                                                                    "zeros": 2,
+                                                                                                    "ones": 0,
+                                                                                                    "node": [],
+                                                                                                    "gain_ratio": 0,
+                                                                                                    "entropy": 0
+                                                                                                },
+                                                                                                {
+                                                                                                    "name": "social",
+                                                                                                    "op": ">",
+                                                                                                    "threshold": 0.003676,
+                                                                                                    "result": 1,
+                                                                                                    "zeros": 0,
+                                                                                                    "ones": 4,
+                                                                                                    "node": [],
+                                                                                                    "gain_ratio": 0,
+                                                                                                    "entropy": 0
+                                                                                                }
+                                                                                            ],
+                                                                                            "gain_ratio": 1,
+                                                                                            "entropy": 0.9182958340544896,
+                                                                                            "zeros": 2,
+                                                                                            "ones": 4
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "pronoun",
+                                                                                            "op": ">",
+                                                                                            "threshold": 0.012658,
+                                                                                            "result": 0,
+                                                                                            "zeros": 5,
+                                                                                            "ones": 0,
+                                                                                            "node": [],
+                                                                                            "gain_ratio": 0,
+                                                                                            "entropy": 0
+                                                                                        }
+                                                                                    ],
+                                                                                    "gain_ratio": 0.44744280677625725,
+                                                                                    "entropy": 0.9456603046006402,
+                                                                                    "zeros": 7,
+                                                                                    "ones": 4
+                                                                                },
+                                                                                {
+                                                                                    "name": "social",
+                                                                                    "op": ">",
+                                                                                    "threshold": 0.016014,
+                                                                                    "result": 1,
+                                                                                    "zeros": 0,
+                                                                                    "ones": 5,
+                                                                                    "node": [],
+                                                                                    "gain_ratio": 0,
+                                                                                    "entropy": 0
+                                                                                }
+                                                                            ],
+                                                                            "gain_ratio": 0.3778387311866184,
+                                                                            "entropy": 0.9886994082884974,
+                                                                            "zeros": 7,
+                                                                            "ones": 9
+                                                                        }
+                                                                    ],
+                                                                    "gain_ratio": 0.35079459427608023,
+                                                                    "entropy": 0.8935711016541907,
+                                                                    "zeros": 20,
+                                                                    "ones": 9
+                                                                }
+                                                            ],
+                                                            "gain_ratio": 0.2704562508181179,
+                                                            "entropy": 0.99819587904281,
+                                                            "zeros": 21,
+                                                            "ones": 19
+                                                        },
+                                                        {
+                                                            "name": "pronoun",
+                                                            "op": ">",
+                                                            "threshold": 0.016226,
+                                                            "result": 0,
+                                                            "zeros": 133,
+                                                            "ones": 26,
+                                                            "node": [],
+                                                            "gain_ratio": 0,
+                                                            "entropy": 0.6426691402319867
+                                                        }
+                                                    ],
+                                                    "gain_ratio": 0.07883753159757503,
+                                                    "entropy": 0.7712049391273162,
+                                                    "zeros": 154,
+                                                    "ones": 45
+                                                }
+                                            ],
+                                            "gain_ratio": 0.08396844743082697,
+                                            "entropy": 0.8891077086271675,
+                                            "zeros": 181,
+                                            "ones": 80
+                                        },
+                                        {
+                                            "name": "TenseM",
+                                            "op": ">",
+                                            "threshold": 0.033563,
+                                            "node": [{
+                                                    "name": "cogmech",
+                                                    "op": "<=",
+                                                    "threshold": 0.147208,
+                                                    "node": [{
+                                                            "name": "affect",
+                                                            "op": "<=",
+                                                            "threshold": 0.063232,
+                                                            "result": 1,
+                                                            "zeros": 15,
+                                                            "ones": 85,
+                                                            "node": [],
+                                                            "gain_ratio": 0,
+                                                            "entropy": 0.6098403047164004
+                                                        },
+                                                        {
+                                                            "name": "affect",
+                                                            "op": ">",
+                                                            "threshold": 0.063232,
+                                                            "node": [{
+                                                                    "name": "social",
+                                                                    "op": "<=",
+                                                                    "threshold": 0.064516,
+                                                                    "node": [{
+                                                                            "name": "affect",
+                                                                            "op": "<=",
+                                                                            "threshold": 0.076547,
+                                                                            "result": 0,
+                                                                            "zeros": 2,
+                                                                            "ones": 0,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0
+                                                                        },
+                                                                        {
+                                                                            "name": "affect",
+                                                                            "op": ">",
+                                                                            "threshold": 0.076547,
+                                                                            "result": 1,
+                                                                            "zeros": 0,
+                                                                            "ones": 2,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0
+                                                                        }
+                                                                    ],
+                                                                    "gain_ratio": 1,
+                                                                    "entropy": 1,
+                                                                    "zeros": 2,
+                                                                    "ones": 2
+                                                                },
+                                                                {
+                                                                    "name": "social",
+                                                                    "op": ">",
+                                                                    "threshold": 0.064516,
+                                                                    "result": 0,
+                                                                    "zeros": 4,
+                                                                    "ones": 0,
+                                                                    "node": [],
+                                                                    "gain_ratio": 0,
+                                                                    "entropy": 0
+                                                                }
+                                                            ],
+                                                            "gain_ratio": 0.31127812445913283,
+                                                            "entropy": 0.8112781244591328,
+                                                            "zeros": 6,
+                                                            "ones": 2
+                                                        }
+                                                    ],
+                                                    "gain_ratio": 0.22553090743599186,
+                                                    "entropy": 0.710676853856123,
+                                                    "zeros": 21,
+                                                    "ones": 87
+                                                },
+                                                {
+                                                    "name": "cogmech",
+                                                    "op": ">",
+                                                    "threshold": 0.147208,
+                                                    "node": [{
+                                                            "name": "bio",
+                                                            "op": "<=",
+                                                            "threshold": 0.028195,
+                                                            "node": [{
+                                                                    "name": "percept",
+                                                                    "op": "<=",
+                                                                    "threshold": 0.020554,
+                                                                    "node": [{
+                                                                            "name": "cogmech",
+                                                                            "op": "<=",
+                                                                            "threshold": 0.17278,
+                                                                            "result": 1,
+                                                                            "zeros": 6,
+                                                                            "ones": 16,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0.8453509366224365
+                                                                        },
+                                                                        {
+                                                                            "name": "cogmech",
+                                                                            "op": ">",
+                                                                            "threshold": 0.17278,
+                                                                            "result": 0,
+                                                                            "zeros": 33,
+                                                                            "ones": 10,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0.782444129406689
+                                                                        }
+                                                                    ],
+                                                                    "gain_ratio": 0.181098112828475,
+                                                                    "entropy": 0.9709505944546686,
+                                                                    "zeros": 39,
+                                                                    "ones": 26
+                                                                },
+                                                                {
+                                                                    "name": "percept",
+                                                                    "op": ">",
+                                                                    "threshold": 0.020554,
+                                                                    "node": [{
+                                                                            "name": "affect",
+                                                                            "op": "<=",
+                                                                            "threshold": 0.075758,
+                                                                            "result": 1,
+                                                                            "zeros": 11,
+                                                                            "ones": 61,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0.616748259826391
+                                                                        },
+                                                                        {
+                                                                            "name": "affect",
+                                                                            "op": ">",
+                                                                            "threshold": 0.075758,
+                                                                            "result": 0,
+                                                                            "zeros": 4,
+                                                                            "ones": 0,
+                                                                            "node": [],
+                                                                            "gain_ratio": 0,
+                                                                            "entropy": 0
+                                                                        }
+                                                                    ],
+                                                                    "gain_ratio": 0.4449012880188612,
+                                                                    "entropy": 0.7166336117927454,
+                                                                    "zeros": 15,
+                                                                    "ones": 61
+                                                                }
+                                                            ],
+                                                            "gain_ratio": 0.12680399595855063,
+                                                            "entropy": 0.9601186626422924,
+                                                            "zeros": 54,
+                                                            "ones": 87
+                                                        },
+                                                        {
+                                                            "name": "bio",
+                                                            "op": ">",
+                                                            "threshold": 0.028195,
+                                                            "result": 0,
+                                                            "zeros": 47,
+                                                            "ones": 18,
+                                                            "node": [],
+                                                            "gain_ratio": 0,
+                                                            "entropy": 0.8512243352621378
+                                                        }
+                                                    ],
+                                                    "gain_ratio": 0.08223748126002503,
+                                                    "entropy": 0.9997280072178101,
+                                                    "zeros": 101,
+                                                    "ones": 105
+                                                }
+                                            ],
+                                            "gain_ratio": 0.06842783442582775,
+                                            "entropy": 0.9638476427733655,
+                                            "zeros": 122,
+                                            "ones": 192
+                                        }
+                                    ],
+                                    "gain_ratio": 0.06839988134538463,
+                                    "entropy": 0.9979023026797438,
+                                    "zeros": 303,
+                                    "ones": 272
+                                },
+                                {
+                                    "name": "percept",
+                                    "op": ">",
+                                    "threshold": 0.051532,
+                                    "result": 0,
+                                    "zeros": 72,
+                                    "ones": 8,
+                                    "node": [],
+                                    "gain_ratio": 0,
+                                    "entropy": 0.4689955935892812
+                                }
+                            ],
+                            "gain_ratio": 0.09611866454269516,
+                            "entropy": 0.984772028847245,
+                            "zeros": 375,
+                            "ones": 280
+                        }
+                    ],
+                    "gain_ratio": 0.15584651777103029,
+                    "entropy": 0.9337368482116498,
+                    "zeros": 472,
+                    "ones": 878
+                }
+            ],
+            "gain_ratio": 0.2947421839328547,
+            "entropy": 0.9828979053834874,
+            "zeros": 1265,
+            "ones": 928
+        },
+        {
+            "name": "bio",
+            "op": ">",
+            "threshold": 0.035587,
+            "node": [{
+                    "name": "bio",
+                    "op": "<=",
+                    "threshold": 0.063421,
+                    "node": [{
+                            "name": "pronoun",
+                            "op": "<=",
+                            "threshold": 0.021589,
+                            "node": [{
+                                    "name": "percept",
+                                    "op": "<=",
+                                    "threshold": 0.015089,
+                                    "node": [{
+                                            "name": "cogmech",
+                                            "op": "<=",
+                                            "threshold": 0.152249,
+                                            "result": 1,
+                                            "zeros": 1,
+                                            "ones": 8,
+                                            "node": [],
+                                            "gain_ratio": 0,
+                                            "entropy": 0.5032583347756457
+                                        },
+                                        {
+                                            "name": "cogmech",
+                                            "op": ">",
+                                            "threshold": 0.152249,
+                                            "node": [{
+                                                    "name": "percept",
+                                                    "op": "<=",
+                                                    "threshold": 0.010899,
+                                                    "result": 0,
+                                                    "zeros": 6,
+                                                    "ones": 0,
+                                                    "node": [],
+                                                    "gain_ratio": 0,
+                                                    "entropy": 0
+                                                },
+                                                {
+                                                    "name": "percept",
+                                                    "op": ">",
+                                                    "threshold": 0.010899,
+                                                    "result": 1,
+                                                    "zeros": 1,
+                                                    "ones": 2,
+                                                    "node": [],
+                                                    "gain_ratio": 0,
+                                                    "entropy": 0.9182958340544896
+                                                }
+                                            ],
+                                            "gain_ratio": 0.49886526560234923,
+                                            "entropy": 0.7642045065086203,
+                                            "zeros": 7,
+                                            "ones": 2
+                                        }
+                                    ],
+                                    "gain_ratio": 0.3573446391960893,
+                                    "entropy": 0.9910760598382222,
+                                    "zeros": 8,
+                                    "ones": 10
+                                },
+                                {
+                                    "name": "percept",
+                                    "op": ">",
+                                    "threshold": 0.015089,
+                                    "node": [{
+                                            "name": "TenseM",
+                                            "op": "<=",
+                                            "threshold": 0.028145,
+                                            "result": 0,
+                                            "zeros": 62,
+                                            "ones": 3,
+                                            "node": [],
+                                            "gain_ratio": 0,
+                                            "entropy": 0.26982844770307396
+                                        },
+                                        {
+                                            "name": "TenseM",
+                                            "op": ">",
+                                            "threshold": 0.028145,
+                                            "node": [{
+                                                    "name": "pronoun",
+                                                    "op": "<=",
+                                                    "threshold": 0.020817,
+                                                    "node": [{
+                                                            "name": "TenseM",
+                                                            "op": "<=",
+                                                            "threshold": 0.029412,
+                                                            "result": 1,
+                                                            "zeros": 0,
+                                                            "ones": 3,
+                                                            "node": [],
+                                                            "gain_ratio": 0,
+                                                            "entropy": 0
+                                                        },
+                                                        {
+                                                            "name": "TenseM",
+                                                            "op": ">",
+                                                            "threshold": 0.029412,
+                                                            "result": 0,
+                                                            "zeros": 41,
+                                                            "ones": 8,
+                                                            "node": [],
+                                                            "gain_ratio": 0,
+                                                            "entropy": 0.6420642892306891
+                                                        }
+                                                    ],
+                                                    "gain_ratio": 0.43804010085266865,
+                                                    "entropy": 0.7444131797881748,
+                                                    "zeros": 41,
+                                                    "ones": 11
+                                                },
+                                                {
+                                                    "name": "pronoun",
+                                                    "op": ">",
+                                                    "threshold": 0.020817,
+                                                    "result": 1,
+                                                    "zeros": 0,
+                                                    "ones": 4,
+                                                    "node": [],
+                                                    "gain_ratio": 0,
+                                                    "entropy": 0
+                                                }
+                                            ],
+                                            "gain_ratio": 0.39633436354525203,
+                                            "entropy": 0.8383729377099397,
+                                            "zeros": 41,
+                                            "ones": 15
+                                        }
+                                    ],
+                                    "gain_ratio": 0.07406870686997055,
+                                    "entropy": 0.6067293172263868,
+                                    "zeros": 103,
+                                    "ones": 18
+                                }
+                            ],
+                            "gain_ratio": 0.12282163232435456,
+                            "entropy": 0.7247964757272867,
+                            "zeros": 111,
+                            "ones": 28
+                        },
+                        {
+                            "name": "pronoun",
+                            "op": ">",
+                            "threshold": 0.021589,
+                            "result": 0,
+                            "zeros": 629,
+                            "ones": 44,
+                            "node": [],
+                            "gain_ratio": 0,
+                            "entropy": 0.3484370105878595
+                        }
+                    ],
+                    "gain_ratio": 0.02899984207582645,
+                    "entropy": 0.43201463530596756,
+                    "zeros": 740,
+                    "ones": 72
+                },
+                {
+                    "name": "bio",
+                    "op": ">",
+                    "threshold": 0.063421,
+                    "result": 0,
+                    "zeros": 2140,
+                    "ones": 54,
+                    "node": [],
+                    "gain_ratio": 0,
+                    "entropy": 0.16660879532833556
+                }
+            ],
+            "gain_ratio": 0.015098843145664181,
+            "entropy": 0.2510098036334462,
+            "zeros": 2880,
+            "ones": 126
+        }
+    ],
+    "gain_ratio": 0.1706508438930328,
+    "entropy": 0.7273571651393319,
+    "zeros": 4145,
+    "ones": 1054
+}

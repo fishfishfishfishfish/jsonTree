@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>7个主维度</title>
+    <style type="text/css">
+        body {
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        div {
+            width: auto;
+            height: auto;
+            line-height: 150%;
+        }
+        
+        ul {
+            list-style: none;
+            margin-left: -20px;
+        }
+        /* ul li:hover{
+        background-color:#DDDDDD;
+        color:#FF0000;
+        cursor:pointer;} */
+        
+        li:hover {
+            cursor: pointer;
+        }
+        
+        li:hover+ul {
+            background-color: #DDDDDD;
+            cursor: pointer;
+        }
+        
+        li.stem {
+            color: brown;
+        }
+        
+        li.leaf {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="continer">
+        <ul class="keep">
+            <li class="stem">bio &lt;=0.035587 </li>
+            <ul class="keep">
+                <li class="stem">bio &lt;=0 </li>
+                <ul class="keep">
+                    <li class="stem">percept &lt;=0.043847 </li>
+                    <ul class="keep">
+                        <li class="leaf">TenseM &lt;=0.007092 -- 0</li>
+                        <ul class="keep"></ul>
+                        <li class="stem">TenseM &gt;0.007092 </li>
+                        <ul class="keep">
+                            <li class="stem">pronoun &lt;=0.063492 </li>
+                            <ul class="keep">
+                                <li class="stem">affect &lt;=0.070968 </li>
+                                <ul class="keep">
+                                    <li class="stem">percept &lt;=0.001536 </li>
+                                    <ul class="keep">
+                                        <li class="stem">TenseM &lt;=0.062069 </li>
+                                        <ul class="keep">
+                                            <li class="leaf">social &lt;=0.021645 -- 1</li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">social &gt;0.021645 -- 0</li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="leaf">TenseM &gt;0.062069 -- 0</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                    <li class="stem">percept &gt;0.001536 </li>
+                                    <ul class="keep">
+                                        <li class="leaf">social &lt;=0.052863 -- 1</li>
+                                        <ul class="keep"></ul>
+                                        <li class="stem">social &gt;0.052863 </li>
+                                        <ul class="keep">
+                                            <li class="stem">affect &lt;=0.052375 </li>
+                                            <ul class="keep">
+                                                <li class="leaf">pronoun &lt;=0.019064 -- 0</li>
+                                                <ul class="keep"></ul>
+                                                <li class="stem">pronoun &gt;0.019064 </li>
+                                                <ul class="keep">
+                                                    <li class="leaf">affect &lt;=0.030612 -- 0</li>
+                                                    <ul class="keep"></ul>
+                                                    <li class="leaf">affect &gt;0.030612 -- 1</li>
+                                                    <ul class="keep"></ul>
+                                                </ul>
+                                            </ul>
+                                            <li class="leaf">affect &gt;0.052375 -- 0</li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                                <li class="leaf">affect &gt;0.070968 -- 0</li>
+                                <ul class="keep"></ul>
+                            </ul>
+                            <li class="leaf">pronoun &gt;0.063492 -- 0</li>
+                            <ul class="keep"></ul>
+                        </ul>
+                    </ul>
+                    <li class="leaf">percept &gt;0.043847 -- 0</li>
+                    <ul class="keep"></ul>
+                </ul>
+                <li class="stem">bio &gt;0 </li>
+                <ul class="keep">
+                    <li class="stem">bio &lt;=0.014167 </li>
+                    <ul class="keep">
+                        <li class="stem">pronoun &lt;=0.040625 </li>
+                        <ul class="keep">
+                            <li class="stem">affect &lt;=0.050076 </li>
+                            <ul class="keep">
+                                <li class="leaf">social &lt;=0.047157 -- 1</li>
+                                <ul class="keep"></ul>
+                                <li class="stem">social &gt;0.047157 </li>
+                                <ul class="keep">
+                                    <li class="stem">percept &lt;=0.042929 </li>
+                                    <ul class="keep">
+                                        <li class="leaf">affect &lt;=0.015406 -- 0</li>
+                                        <ul class="keep"></ul>
+                                        <li class="leaf">affect &gt;0.015406 -- 1</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                    <li class="leaf">percept &gt;0.042929 -- 0</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                            </ul>
+                            <li class="stem">affect &gt;0.050076 </li>
+                            <ul class="keep">
+                                <li class="leaf">bio &lt;=0.00489 -- 1</li>
+                                <ul class="keep"></ul>
+                                <li class="stem">bio &gt;0.00489 </li>
+                                <ul class="keep">
+                                    <li class="stem">TenseM &lt;=0.026397 </li>
+                                    <ul class="keep">
+                                        <li class="stem">percept &lt;=0.0209 </li>
+                                        <ul class="keep">
+                                            <li class="leaf">affect &lt;=0.062361 -- 0</li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">affect &gt;0.062361 -- 1</li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="leaf">percept &gt;0.0209 -- 0</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                    <li class="stem">TenseM &gt;0.026397 </li>
+                                    <ul class="keep">
+                                        <li class="stem">pronoun &lt;=0.028662 </li>
+                                        <ul class="keep">
+                                            <li class="stem">social &lt;=0.06079 </li>
+                                            <ul class="keep">
+                                                <li class="leaf">bio &lt;=0.01147 -- 1</li>
+                                                <ul class="keep"></ul>
+                                                <li class="stem">bio &gt;0.01147 </li>
+                                                <ul class="keep">
+                                                    <li class="leaf">cogmech &lt;=0.104387 -- 1</li>
+                                                    <ul class="keep"></ul>
+                                                    <li class="leaf">cogmech &gt;0.104387 -- 0</li>
+                                                    <ul class="keep"></ul>
+                                                </ul>
+                                            </ul>
+                                            <li class="leaf">social &gt;0.06079 -- 0</li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="leaf">pronoun &gt;0.028662 -- 1</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                        <li class="stem">pronoun &gt;0.040625 </li>
+                        <ul class="keep">
+                            <li class="stem">percept &lt;=0.035862 </li>
+                            <ul class="keep">
+                                <li class="stem">TenseM &lt;=0.022436 </li>
+                                <ul class="keep">
+                                    <li class="leaf">affect &lt;=0.034693 -- 1</li>
+                                    <ul class="keep"></ul>
+                                    <li class="stem">affect &gt;0.034693 </li>
+                                    <ul class="keep">
+                                        <li class="leaf">pronoun &lt;=0.059233 -- 0</li>
+                                        <ul class="keep"></ul>
+                                        <li class="stem">pronoun &gt;0.059233 </li>
+                                        <ul class="keep">
+                                            <li class="leaf">pronoun &lt;=0.09375 -- 1</li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">pronoun &gt;0.09375 -- 0</li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                                <li class="leaf">TenseM &gt;0.022436 -- 1</li>
+                                <ul class="keep"></ul>
+                            </ul>
+                            <li class="stem">percept &gt;0.035862 </li>
+                            <ul class="keep">
+                                <li class="stem">cogmech &lt;=0.143705 </li>
+                                <ul class="keep">
+                                    <li class="leaf">TenseM &lt;=0.028736 -- 0</li>
+                                    <ul class="keep"></ul>
+                                    <li class="leaf">TenseM &gt;0.028736 -- 1</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                                <li class="leaf">cogmech &gt;0.143705 -- 0</li>
+                                <ul class="keep"></ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li class="stem">bio &gt;0.014167 </li>
+                    <ul class="keep">
+                        <li class="stem">percept &lt;=0.051532 </li>
+                        <ul class="keep">
+                            <li class="stem">TenseM &lt;=0.033563 </li>
+                            <ul class="keep">
+                                <li class="stem">percept &lt;=0.014437 </li>
+                                <ul class="keep">
+                                    <li class="leaf">TenseM &lt;=0.015038 -- 0</li>
+                                    <ul class="keep"></ul>
+                                    <li class="stem">TenseM &gt;0.015038 </li>
+                                    <ul class="keep">
+                                        <li class="stem">pronoun &lt;=0.018919 </li>
+                                        <ul class="keep">
+                                            <li class="stem">affect &lt;=0.030869 </li>
+                                            <ul class="keep">
+                                                <li class="leaf">percept &lt;=0.011673 -- 1</li>
+                                                <ul class="keep"></ul>
+                                                <li class="leaf">percept &gt;0.011673 -- 0</li>
+                                                <ul class="keep"></ul>
+                                            </ul>
+                                            <li class="leaf">affect &gt;0.030869 -- 1</li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="stem">pronoun &gt;0.018919 </li>
+                                        <ul class="keep">
+                                            <li class="leaf">cogmech &lt;=0.141491 -- 1</li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">cogmech &gt;0.141491 -- 0</li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                    </ul>
+                                </ul>
+                                <li class="stem">percept &gt;0.014437 </li>
+                                <ul class="keep">
+                                    <li class="stem">pronoun &lt;=0.016226 </li>
+                                    <ul class="keep">
+                                        <li class="leaf">affect &lt;=0.019724 -- 1</li>
+                                        <ul class="keep"></ul>
+                                        <li class="stem">affect &gt;0.019724 </li>
+                                        <ul class="keep">
+                                            <li class="leaf">TenseM &lt;=0.022544 -- 0</li>
+                                            <ul class="keep"></ul>
+                                            <li class="stem">TenseM &gt;0.022544 </li>
+                                            <ul class="keep">
+                                                <li class="stem">social &lt;=0.016014 </li>
+                                                <ul class="keep">
+                                                    <li class="stem">pronoun &lt;=0.012658 </li>
+                                                    <ul class="keep">
+                                                        <li class="leaf">social &lt;=0.003676 -- 0</li>
+                                                        <ul class="keep"></ul>
+                                                        <li class="leaf">social &gt;0.003676 -- 1</li>
+                                                        <ul class="keep"></ul>
+                                                    </ul>
+                                                    <li class="leaf">pronoun &gt;0.012658 -- 0</li>
+                                                    <ul class="keep"></ul>
+                                                </ul>
+                                                <li class="leaf">social &gt;0.016014 -- 1</li>
+                                                <ul class="keep"></ul>
+                                            </ul>
+                                        </ul>
+                                    </ul>
+                                    <li class="leaf">pronoun &gt;0.016226 -- 0</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                            </ul>
+                            <li class="stem">TenseM &gt;0.033563 </li>
+                            <ul class="keep">
+                                <li class="stem">cogmech &lt;=0.147208 </li>
+                                <ul class="keep">
+                                    <li class="leaf">affect &lt;=0.063232 -- 1</li>
+                                    <ul class="keep"></ul>
+                                    <li class="stem">affect &gt;0.063232 </li>
+                                    <ul class="keep">
+                                        <li class="stem">social &lt;=0.064516 </li>
+                                        <ul class="keep">
+                                            <li class="leaf">affect &lt;=0.076547 -- 0</li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">affect &gt;0.076547 -- 1</li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="leaf">social &gt;0.064516 -- 0</li>
+                                        <ul class="keep"></ul>
+                                    </ul>
+                                </ul>
+                                <li class="stem">cogmech &gt;0.147208 </li>
+                                <ul class="keep">
+                                    <li class="stem">bio &lt;=0.028195 </li>
+                                    <ul class="keep">
+                                        <li class="stem">percept &lt;=0.020554 </li>
+                                        <ul class="keep">
+                                            <li class="leaf">cogmech &lt;=0.17278 -- 1</li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">cogmech &gt;0.17278 -- 0</li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                        <li class="stem">percept &gt;0.020554 </li>
+                                        <ul class="keep">
+                                            <li class="leaf">affect &lt;=0.075758 -- 1</li>
+                                            <ul class="keep"></ul>
+                                            <li class="leaf">affect &gt;0.075758 -- 0</li>
+                                            <ul class="keep"></ul>
+                                        </ul>
+                                    </ul>
+                                    <li class="leaf">bio &gt;0.028195 -- 0</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                            </ul>
+                        </ul>
+                        <li class="leaf">percept &gt;0.051532 -- 0</li>
+                        <ul class="keep"></ul>
+                    </ul>
+                </ul>
+            </ul>
+            <li class="stem">bio &gt;0.035587 </li>
+            <ul class="keep">
+                <li class="stem">bio &lt;=0.063421 </li>
+                <ul class="keep">
+                    <li class="stem">pronoun &lt;=0.021589 </li>
+                    <ul class="keep">
+                        <li class="stem">percept &lt;=0.015089 </li>
+                        <ul class="keep">
+                            <li class="leaf">cogmech &lt;=0.152249 -- 1</li>
+                            <ul class="keep"></ul>
+                            <li class="stem">cogmech &gt;0.152249 </li>
+                            <ul class="keep">
+                                <li class="leaf">percept &lt;=0.010899 -- 0</li>
+                                <ul class="keep"></ul>
+                                <li class="leaf">percept &gt;0.010899 -- 1</li>
+                                <ul class="keep"></ul>
+                            </ul>
+                        </ul>
+                        <li class="stem">percept &gt;0.015089 </li>
+                        <ul class="keep">
+                            <li class="leaf">TenseM &lt;=0.028145 -- 0</li>
+                            <ul class="keep"></ul>
+                            <li class="stem">TenseM &gt;0.028145 </li>
+                            <ul class="keep">
+                                <li class="stem">pronoun &lt;=0.020817 </li>
+                                <ul class="keep">
+                                    <li class="leaf">TenseM &lt;=0.029412 -- 1</li>
+                                    <ul class="keep"></ul>
+                                    <li class="leaf">TenseM &gt;0.029412 -- 0</li>
+                                    <ul class="keep"></ul>
+                                </ul>
+                                <li class="leaf">pronoun &gt;0.020817 -- 1</li>
+                                <ul class="keep"></ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li class="leaf">pronoun &gt;0.021589 -- 0</li>
+                    <ul class="keep"></ul>
+                </ul>
+                <li class="leaf">bio &gt;0.063421 -- 0</li>
+                <ul class="keep"></ul>
+            </ul>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script language="javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script language="javascript">
+    //模拟数据
+
+    $(function() {
+        //控制菜单的隐藏显示
+        $("ul[class] li").each(function() {
+            $(this).click(function() {
+                $(this).next().toggle("easeOutElastic");
+            });
+        });
+    })
+</script>
